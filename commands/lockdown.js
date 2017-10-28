@@ -1,4 +1,5 @@
 const ms = require('ms');
+const Discord = require('discord.js');
 exports.run = (client, message, args) => {
   if (!client.lockit) client.lockit = [];
   const time = args.join(' ');
