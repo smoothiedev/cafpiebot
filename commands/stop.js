@@ -4,11 +4,10 @@ message.delete()
 message.channel.send({embed: {
 color: 0x00FF00,
 description: "Stopping the bot..."
-
   }
-  });
+  })
   console.log("Stopping the bot..")
-  console:stop()
+server:stop()
 };
 
 
