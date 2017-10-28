@@ -10,7 +10,7 @@ exports.run = (client, message, args) => {
   const muteRole = client.guilds.get(message.guild.id).roles.find('name', `${rank}`);
   const embed = new Discord.RichEmbed()
   .setTimestamp()
-  .setColor(0xff0000)
+  .setColor(0x00ff00)
   .setTitle("User Rank Modified")
   .setThumbnail(`${user.avatarURL}`)
   .setDescription(`\n`)
@@ -20,7 +20,7 @@ exports.run = (client, message, args) => {
   .setFooter(`User: ${user.username}`,`${user.avatarURL}`);
 
   user.sendMessage({embed: {
-color: 0xff0000,
+color: 0x00ff00,
 title: "User ranked",
 description: (`\nYou have been ranked!\n`),
 fields: [{
