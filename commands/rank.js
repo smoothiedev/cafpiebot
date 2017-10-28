@@ -54,7 +54,7 @@ fields: [{
 exports.conf = {
   enabled: true,
   guildOnly: false,
-  aliases: [],
+  aliases: ['promote','addrank','addrole'],
   permLevel: 3
 };
 
@@ -63,3 +63,4 @@ exports.help = {
   description: 'Gives a role to the discord user.',
   usage: 'rank [mention] [role]'
 };
+
