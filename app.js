@@ -10,7 +10,7 @@ const log = message => {
   console.log(`[${moment().format('YYYY-MM-DD HH:mm:ss')}] ${message}`);
 };
 
-client.setPresence({ game: { name: 'Made by Pie#3429, use ;cmds to see the list of commands avaliable!', type: 0 } });
+clientUser.setPresence({ game: { name: "Pie#3429 | ;cmds", type: 0 } });
 client.commands = new Discord.Collection();
 client.aliases = new Discord.Collection();
 fs.readdir('./commands/', (err, files) => {
