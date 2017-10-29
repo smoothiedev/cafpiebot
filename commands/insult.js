@@ -7,7 +7,7 @@ message.delete()
 
 var b = Math.floor(Math.random() * 10) + 1  
 console.log(`${b}`)
-if (b = 1) { console.log(`${b}`).then
+if (b == 1) {
   message.channel.send({embed: {
     color: 0xff0000,
     title: "GET REKT KID",
@@ -19,7 +19,7 @@ fields: [{
 }],
   }})
 } else {
-if (b = 2) { console.log(`${b}`).then
+if (b == 2) { 
     message.channel.send({embed: {
       color: 0xff0000,
       title: "GET REKT KID",
@@ -31,7 +31,7 @@ if (b = 2) { console.log(`${b}`).then
   }],
     }})
   } else {
-if (b = 3) { console.log(`${b}`).then
+if (b == 3) { 
         message.channel.send({embed: {
           color: 0xff0000,
           title: "GET REKT KID",
@@ -44,7 +44,7 @@ if (b = 3) { console.log(`${b}`).then
         }})
       }
       else { 
-        if (b = 4) { console.log(`${b}`).then
+        if (b == 4) { 
           message.channel.send({embed: {
             color: 0xff0000,
             title: "GET REKT KID",
@@ -56,7 +56,7 @@ if (b = 3) { console.log(`${b}`).then
         }],
           }})
           } else {
-            if (b = 5) { console.log(`${b}`).then
+            if (b == 5) { 
           
                 message.channel.send({embed: {
                   color: 0xff0000,
@@ -69,7 +69,7 @@ if (b = 3) { console.log(`${b}`).then
               }],
                 }})
               } else {
-                if (b = 6) { console.log(`${b}`).then
+                if (b == 6) { 
                     message.channel.send({embed: {
                       color: 0xff0000,
                       title: "GET REKT KID",
@@ -82,7 +82,7 @@ if (b = 3) { console.log(`${b}`).then
                     }})
                   }
                   else {
-                    if (b = 7) { console.log(`${b}`).then
+                    if (b == 7) { 
                         
                         message.channel.send({embed: {
                           color: 0xff0000,
@@ -95,7 +95,7 @@ if (b = 3) { console.log(`${b}`).then
                       }],
                         }})
                       }else {
-                        if (b = 8) { console.log(`${b}`).then
+                        if (b == 8) { 
                             message.channel.send({embed: {
                               color: 0xff0000,
                               title: "GET REKT KID",
@@ -107,7 +107,7 @@ if (b = 3) { console.log(`${b}`).then
                           }],
                             }})
                           }else {
-                            if (b = 9) { console.log(`${b}`).then
+                            if (b == 9) { 
                                 message.channel.send({embed: {
                                   color: 0xff0000,
                                   title: "GET REKT KID",
@@ -119,7 +119,7 @@ if (b = 3) { console.log(`${b}`).then
                               }],
                                 }})
                               }else {
-                                if (b = 10) { console.log(`${b}`).then 
+                                if (b == 10) {  
                                   message.channel.send({embed: {
                                     color: 0xff0000,
                                     title: "KARMA BITCH",
