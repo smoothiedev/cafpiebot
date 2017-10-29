@@ -4,7 +4,7 @@ exports.run = (client, message) => {
     const user = message.mentions.users.first();
 if (message.mentions.users.size < 1) return message.reply('You must mention someone to insult them.').catch(console.error);
 message.delete()
-const roll = Math.floor(Math.random() * 10) + 1  
+var roll = Math.floor(Math.random() * 10) + 1  
 if (roll = 1) {
   message.channel.send(`${user} You're a failed abortion whose birth certificate is an apology from the condom factory.`)
 } else {
