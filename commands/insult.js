@@ -10,7 +10,7 @@ if (roll = 1) {
     color: 0xff0000,
     title: "GET REKT KID",
     description: (``),
-    footer: ("hahahahahahaha"),
+    footer: {text = "hahahahahahaha"},
 fields: [{
   name: "Insult:",
   value: `${user} is a failed abortion whose birth certificate is an apology from the condom factory.`
@@ -22,7 +22,7 @@ if (roll = 2) {
       color: 0xff0000,
       title: "GET REKT KID",
       description: (``),
-      footer: ("hahahahahahaha"),
+      footer: {text = "hahahahahahaha"},
   fields: [{
     name: "Insult:",
     value: `${user} must have been born on a highway, because that's where most accidents happen.`
@@ -34,7 +34,7 @@ if (roll = 3) {
           color: 0xff0000,
           title: "GET REKT KID",
           description: (``),
-          footer: ("hahahahahahaha"),
+          footer: {text = "hahahahahahaha"},
       fields: [{
         name: "Insult:",
         value: `${user} is so ugly that when your mama dropped you off at school she got a fine for littering.`
@@ -47,7 +47,7 @@ if (roll = 3) {
             color: 0xff0000,
             title: "GET REKT KID",
             description: (``),
-            footer: ("hahahahahahaha"),
+            footer: {text = "hahahahahahaha"},
         fields: [{
           name: "Insult:",
           value: `${user} Dumbass.`
@@ -60,7 +60,7 @@ if (roll = 3) {
                   color: 0xff0000,
                   title: "GET REKT KID",
                   description: (``),
-                  footer: ("hahahahahahaha"),
+                  footer: {text = "hahahahahahaha"},
               fields: [{
                 name: "Insult:",
                 value: `Roses are red, violets are blue, I have 5 fingers, the 3rd ones for ${user}.`
@@ -72,7 +72,7 @@ if (roll = 3) {
                       color: 0xff0000,
                       title: "GET REKT KID",
                       description: (``),
-                      footer: ("hahahahahahaha"),
+                      footer: {text = "hahahahahahaha"},
                   fields: [{
                     name: "Insult:",
                     value: `${user} bring everyone a lot of joy, when ${user} leaves the room.`
@@ -86,7 +86,7 @@ if (roll = 3) {
                           color: 0xff0000,
                           title: "GET REKT KID",
                           description: (``),
-                          footer: ("hahahahahahaha"),
+                          footer: {text = "hahahahahahaha"},
                       fields: [{
                         name: "Insult:",
                         value: `I wasn't born with enough middle fingers to let you know how I feel about ${user}.`
@@ -98,7 +98,7 @@ if (roll = 3) {
                               color: 0xff0000,
                               title: "GET REKT KID",
                               description: (``),
-                              footer: ("hahahahahahaha"),
+                              footer: {text = "hahahahahahaha"},
                           fields: [{
                             name: "Insult:",
                             value: `I'm jealous of all the people that haven't met ${user}!`
@@ -110,7 +110,7 @@ if (roll = 3) {
                                   color: 0xff0000,
                                   title: "GET REKT KID",
                                   description: (``),
-                                  footer: ("hahahahahahaha"),
+                                  footer: {text = "hahahahahahaha"},
                               fields: [{
                                 name: "Insult:",
                                 value: `${user} shouldn't play hide and seek, no one would look for ${user}.`
@@ -122,7 +122,7 @@ if (roll = 3) {
                                     color: 0xff0000,
                                     title: "KARMA BITCH",
                                     description: (``),
-                                    footer: ("God is respectful hahahahahaha"),
+                                    footer: {text = "God is respectful hahahahahahaha"},
                                 fields: [{
                                   name: "Insult:",
                                   value: `${message.author} Well, the tables have turned. You're an idiot to trust a bot like me. KARMA.`
