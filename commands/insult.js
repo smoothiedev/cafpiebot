@@ -5,7 +5,7 @@ exports.run = (client, message) => {
 if (message.mentions.users.size < 1) return message.reply('You must mention someone to insult them.').catch(console.error);
 message.delete()
 var roll = Math.floor(Math.random() * 10) + 1  
-if (roll = 1) {
+if (roll.Value = 1) {
   message.channel.send({embed: {
     color: 0xff0000,
     title: "GET REKT KID",
@@ -17,7 +17,7 @@ fields: [{
 }],
   }})
 } else {
-if (roll = 2) {
+if (roll.Value = 2) {
     message.channel.send({embed: {
       color: 0xff0000,
       title: "GET REKT KID",
@@ -29,7 +29,7 @@ if (roll = 2) {
   }],
     }})
   } else {
-if (roll = 3) {
+if (roll.Value = 3) {
         message.channel.send({embed: {
           color: 0xff0000,
           title: "GET REKT KID",
@@ -42,7 +42,7 @@ if (roll = 3) {
         }})
       }
       else {
-        if (roll = 4) {
+        if (roll.Value = 4) {
           message.channel.send({embed: {
             color: 0xff0000,
             title: "GET REKT KID",
@@ -54,7 +54,7 @@ if (roll = 3) {
         }],
           }})
           } else {
-            if (roll = 5) {
+            if (roll.Value = 5) {
           
                 message.channel.send({embed: {
                   color: 0xff0000,
@@ -67,7 +67,7 @@ if (roll = 3) {
               }],
                 }})
               } else {
-                if (roll = 6) {
+                if (roll.Value = 6) {
                     message.channel.send({embed: {
                       color: 0xff0000,
                       title: "GET REKT KID",
@@ -80,7 +80,7 @@ if (roll = 3) {
                     }})
                   }
                   else {
-                    if (roll = 7) {
+                    if (roll.Value = 7) {
                         
                         message.channel.send({embed: {
                           color: 0xff0000,
@@ -93,7 +93,7 @@ if (roll = 3) {
                       }],
                         }})
                       }else {
-                        if (roll = 8) {
+                        if (roll.Value = 8) {
                             message.channel.send({embed: {
                               color: 0xff0000,
                               title: "GET REKT KID",
@@ -105,7 +105,7 @@ if (roll = 3) {
                           }],
                             }})
                           }else {
-                            if (roll = 9) {
+                            if (roll.Value = 9) {
                                 message.channel.send({embed: {
                                   color: 0xff0000,
                                   title: "GET REKT KID",
@@ -117,7 +117,7 @@ if (roll = 3) {
                               }],
                                 }})
                               }else {
-                                if (roll = 10) {
+                                if (roll.Value = 10) {
                                   message.channel.send({embed: {
                                     color: 0xff0000,
                                     title: "KARMA BITCH",
