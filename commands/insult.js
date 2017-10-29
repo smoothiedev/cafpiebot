@@ -5,7 +5,7 @@ exports.run = (client, message) => {
 if (message.mentions.users.size < 1) return message.reply('You must mention someone to insult them.').catch(console.error);
 message.delete()
 
-return b = Math.floor(Math.random() * 10) + 1  
+b = Math.floor(Math.random() * 10) + 1  
 
 if (b = 1) {
   message.channel.send({embed: {
