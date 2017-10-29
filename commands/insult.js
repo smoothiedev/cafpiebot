@@ -6,36 +6,128 @@ if (message.mentions.users.size < 1) return message.reply('You must mention some
 message.delete()
 var roll = Math.floor(Math.random() * 10) + 1  
 if (roll = 1) {
-  message.channel.send(`${user} You're a failed abortion whose birth certificate is an apology from the condom factory.`)
+  message.channel.send({embed: {
+    color: 0xff0000,
+    title: "GET REKT KID",
+    description: (``),
+    footer: ("hahahahahahaha"),
+fields: [{
+  name: "Insult:",
+  value: `${user} is a failed abortion whose birth certificate is an apology from the condom factory.`
+}],
+  }})
 } else {
 if (roll = 2) {
-    message.channel.send(`${user} You must have been born on a highway, because that's where most accidents happen.`)
+    message.channel.send({embed: {
+      color: 0xff0000,
+      title: "GET REKT KID",
+      description: (``),
+      footer: ("hahahahahahaha"),
+  fields: [{
+    name: "Insult:",
+    value: `${user} must have been born on a highway, because that's where most accidents happen.`
+  }],
+    }})
   } else {
-    if (roll = 3) {
-        message.channel.send(`${user} You are so ugly that when your mama dropped you off at school she got a fine for littering.`)
+if (roll = 3) {
+        message.channel.send({embed: {
+          color: 0xff0000,
+          title: "GET REKT KID",
+          description: (``),
+          footer: ("hahahahahahaha"),
+      fields: [{
+        name: "Insult:",
+        value: `${user} is so ugly that when your mama dropped you off at school she got a fine for littering.`
+      }],
+        }})
       }
       else {
         if (roll = 4) {
-            message.channel.send(`${user} Dumbass.`)
+          message.channel.send({embed: {
+            color: 0xff0000,
+            title: "GET REKT KID",
+            description: (``),
+            footer: ("hahahahahahaha"),
+        fields: [{
+          name: "Insult:",
+          value: `${user} Dumbass.`
+        }],
+          }})
           } else {
             if (roll = 5) {
-                message.channel.send(`${user} Roses are red, violets are blue, I have 5 fingers, the 3rd ones for you.`)
+          
+                message.channel.send({embed: {
+                  color: 0xff0000,
+                  title: "GET REKT KID",
+                  description: (``),
+                  footer: ("hahahahahahaha"),
+              fields: [{
+                name: "Insult:",
+                value: `Roses are red, violets are blue, I have 5 fingers, the 3rd ones for ${user}.`
+              }],
+                }})
               } else {
                 if (roll = 6) {
-                    message.channel.send(`${user} You bring everyone a lot of joy, when you leave the room.`)
+                    message.channel.send({embed: {
+                      color: 0xff0000,
+                      title: "GET REKT KID",
+                      description: (``),
+                      footer: ("hahahahahahaha"),
+                  fields: [{
+                    name: "Insult:",
+                    value: `${user} bring everyone a lot of joy, when ${user} leaves the room.`
+                  }],
+                    }})
                   }
                   else {
                     if (roll = 7) {
-                        message.channel.send(`${user} I wasn't born with enough middle fingers to let you know how I feel about you.`)
+                        
+                        message.channel.send({embed: {
+                          color: 0xff0000,
+                          title: "GET REKT KID",
+                          description: (``),
+                          footer: ("hahahahahahaha"),
+                      fields: [{
+                        name: "Insult:",
+                        value: `I wasn't born with enough middle fingers to let you know how I feel about ${user}.`
+                      }],
+                        }})
                       }else {
                         if (roll = 8) {
-                            message.channel.send(`${user} I'm jealous of all the people that haven't met you!`)
+                            message.channel.send({embed: {
+                              color: 0xff0000,
+                              title: "GET REKT KID",
+                              description: (``),
+                              footer: ("hahahahahahaha"),
+                          fields: [{
+                            name: "Insult:",
+                            value: `I'm jealous of all the people that haven't met ${user}!`
+                          }],
+                            }})
                           }else {
                             if (roll = 9) {
-                                message.channel.send(`${user} You shouldn't play hide and seek, no one would look for you.`)
+                                message.channel.send({embed: {
+                                  color: 0xff0000,
+                                  title: "GET REKT KID",
+                                  description: (``),
+                                  footer: ("hahahahahahaha"),
+                              fields: [{
+                                name: "Insult:",
+                                value: `${user} shouldn't play hide and seek, no one would look for ${user}.`
+                              }],
+                                }})
                               }else {
                                 if (roll = 10) {
-                                    message.channel.send(`${message.author} Well, the tables have turned. You're an idiot to trust a bot like me. KARMA.`)
+                                  message.channel.send({embed: {
+                                    color: 0xff0000,
+                                    title: "KARMA BITCH",
+                                    description: (``),
+                                    footer: ("God is respectful hahahahahaha"),
+                                fields: [{
+                                  name: "Insult:",
+                                  value: `${message.author} Well, the tables have turned. You're an idiot to trust a bot like me. KARMA.`
+                                }],
+                                  }})
                                   }
     }
   }
