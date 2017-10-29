@@ -5,7 +5,7 @@ exports.run = (client, message) => {
 if (message.mentions.users.size < 1) return message.reply('You must mention someone to insult them.').catch(console.error);
 message.delete()
 
-var b = Math.floor(Math.random() * 10) + 1  
+var b = Math.floor(Math.random() * 15) + 1  
 console.log(`${b}`)
 if (b == 1) {
   message.channel.send({embed: {
@@ -130,6 +130,65 @@ if (b == 3) {
                                   value: `${message.author} Well, the tables have turned. You're an idiot to trust a bot like me. KARMA.`
                                 }],
                                   }})
+                                }else {
+                                  if (b == 11) {  
+                                    message.channel.send({embed: {
+                                      color: 0xff0000,
+                                      title: "GET REKT KID",
+                                      description: (``),
+                                      footer: {text: "hahahahahahaha"},
+                                  fields: [{
+                                    name: "Insult:",
+                                    value: `No need for insults, ${user}'s face says it all.`
+                                  }],
+                                    }})
+                                  }else {
+                                    if (b == 12) {  
+                                      message.channel.send({embed: {
+                                        color: 0xff0000,
+                                        title: "GET REKT KID",
+                                        description: (``),
+                                        footer: {text: "hahahahahahaha"},
+                                    fields: [{
+                                      name: "Insult:",
+                                      value: `My mom says pigs don’t eat biscuits… So I better take that one out of ${user} hand.`
+                                    }],
+                                      }})
+                                    }else {
+                                      if (b == 13) {  
+                                        message.channel.send({embed: {
+                                          color: 0xff0000,
+                                          title: "GET REKT KID",
+                                          description: (``),
+                                          footer: {text: "hahahahahahaha"},
+                                      fields: [{
+                                        name: "Insult:",
+                                        value: `${user} is so ugly that ${user} scare the shit back into people.`
+                                      }],
+                                        }})}else {
+                                          if (b == 14) {  
+                                            message.channel.send({embed: {
+                                              color: 0xff0000,
+                                              title: "GET REKT KID",
+                                              description: (``),
+                                              footer: {text: "hahahahahahaha"},
+                                          fields: [{
+                                            name: "Insult:",
+                                            value: `If I were to slap ${user}, it would be considered animal abuse!`
+                                          }],
+                                            }})
+                                          }else {
+                                            if (b == 15) {  
+                                              message.channel.send({embed: {
+                                                color: 0xff0000,
+                                                title: "GET REKT KID",
+                                                description: (``),
+                                                footer: {text: "hahahahahahaha"},
+                                            fields: [{
+                                              name: "Insult:",
+                                              value: `Why don't ${user} check eBay and see if they have a life for sale.`
+                                            }],
+                                              }})
                                   }
     }
   }
@@ -140,6 +199,11 @@ if (b == 3) {
             }
           }
         }
+      }
+    }
+  }
+}
+}
 
 client.channels.get(modlog.id).send({embed: {
     color: 0x0000FF,
