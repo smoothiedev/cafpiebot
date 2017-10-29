@@ -16,7 +16,10 @@ exports.run = (client, message) => {
     name: "[3] Impersonation",
     value: "Impersonating anyone who is in the discord shall be dealt with a guild kick if user persists to not change their nickname or stop."
   },{
-    name: "[4] Raiding",
+    name: "[4] Breaking rules using bot commands",
+    value: "Breaking the rules such as spamming, tagging everyone or bullying using ;say command shall be punishable with 10 days mute."
+  },{
+    name: "[5] Raiding",
     value: "Raiding discord shall be dealt with a guild ban as raiding is against discord TOS."
   }]
     }
