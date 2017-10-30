@@ -20,6 +20,7 @@ exports.run = (client, message, args) => {
   client.channels.get(modlog.id).send({embed}).catch(console.error);
   
   message.guild.unban(user);
+  message.channel.send({embed});
 };
 
 
