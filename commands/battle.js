@@ -104,6 +104,7 @@ inline: true
     }})
     var f = d-wtf
 var kys = Math.floor(Math.random() * 25) + 1 
+sleep(1*1000);
     message.channel.send({embed: {
       color: 0x00ff00,
       title: "Battle status: In progress..",
@@ -139,6 +140,7 @@ var w0t = Math.floor(Math.random() * 25) + 1
     }})
     var wowow = f-w0t
 var lao = Math.floor(Math.random() * 25) + 1 
+sleep(1*1000);
     message.channel.send({embed: {
       color: 0x00ff00,
       title: "Battle status: In progress..",
