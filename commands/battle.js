@@ -6,6 +6,51 @@ exports.run = (client, message) => {
 if (message.mentions.users.size < 1) return message.reply('You must mention someone to battle them.').catch(console.error);
 message.channel.send({embed: {
   color: 0xff0000,
+  title: ":fire: Battle Starting in 3!",
+  description: (``),
+fields: [{
+name: `${message.author}:`,
+value: `100/100`,
+inline: true
+},{
+  name: `${user}:`,
+  value: `100/100`,
+  inline: true
+  }],
+}})
+sleep(1*1000)
+message.channel.send({embed: {
+  color: 0xff0000,
+  title: ":fire: Battle Starting in 2!",
+  description: (``),
+fields: [{
+name: `${message.author}:`,
+value: `100/100`,
+inline: true
+},{
+  name: `${user}:`,
+  value: `100/100`,
+  inline: true
+  }],
+}})
+sleep(1*1000)
+message.channel.send({embed: {
+  color: 0xff0000,
+  title: ":fire: Battle Starting in 1!",
+  description: (``),
+fields: [{
+name: `${message.author}:`,
+value: `100/100`,
+inline: true
+},{
+  name: `${user}:`,
+  value: `100/100`,
+  inline: true
+  }],
+}})
+sleep(1*1000)
+message.channel.send({embed: {
+  color: 0xff0000,
   title: ":fire: Battle Started!",
   description: (``),
 fields: [{
@@ -17,7 +62,7 @@ inline: true
   value: `100/100`,
   inline: true
   }],
-}}).then((message)=>{
+}})
   while(true) {
     sleep(1*1000); // sleep for 1 seconds
     var b = Math.floor(Math.random() * 25) + 1 
@@ -199,8 +244,7 @@ if (fk > ggg-sialay) {
     }})
     break
 }
-}})
-};
+}};
 
 exports.conf = {
 enabled: true,
