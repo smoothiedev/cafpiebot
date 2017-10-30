@@ -18,9 +18,8 @@ inline: true
   value: `100/100`,
   inline: true
   }],
-}},
-sleep(1*1000),
-message.delete())
+}})
+sleep(1*1000)
 message.channel.send({embed: {
   color: 0xff0000,
   title: ":fire: Battle Starting in 2!",
@@ -34,9 +33,8 @@ inline: true
   value: `100/100`,
   inline: true
   }],
-}},
-sleep(1*1000),
-message.delete())
+}})
+sleep(1*1000)
 message.channel.send({embed: {
   color: 0xff0000,
   title: ":fire: Battle Starting in 1!",
@@ -50,9 +48,8 @@ inline: true
   value: `100/100`,
   inline: true
   }],
-}},
-sleep(1*1000),
-message.delete())
+}})
+sleep(1*1000)
 message.channel.send({embed: {
   color: 0xff0000,
   title: ":fire: Battle Started!",
@@ -234,7 +231,7 @@ if (fk > ggg-sialay) {
         break
   } else {
     message.channel.send({embed: {
-      color: 0xff0000,
+      color: 0xffff00,
       title: "Battle status: Round ended!",
       description: (`:trophy: ${message.author.username} won the battle!`),
       footer: {text : `Winner is ${message.author.username}`},
