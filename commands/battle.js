@@ -18,8 +18,9 @@ inline: true
   value: `100/100`,
   inline: true
   }],
-}})
-sleep(1*1000)
+}},
+sleep(1*1000),
+message.delete())
 message.channel.send({embed: {
   color: 0xff0000,
   title: ":fire: Battle Starting in 2!",
@@ -33,8 +34,9 @@ inline: true
   value: `100/100`,
   inline: true
   }],
-}})
-sleep(1*1000)
+}},
+sleep(1*1000),
+message.delete())
 message.channel.send({embed: {
   color: 0xff0000,
   title: ":fire: Battle Starting in 1!",
@@ -48,8 +50,9 @@ inline: true
   value: `100/100`,
   inline: true
   }],
-}})
-sleep(1*1000)
+}},
+sleep(1*1000),
+message.delete())
 message.channel.send({embed: {
   color: 0xff0000,
   title: ":fire: Battle Started!",
@@ -65,7 +68,7 @@ inline: true
   }],
 }})
   while(true) {
-    sleep(1*1000); // sleep for 1 seconds
+    sleep(3*1000) // sleep for 1 seconds
     var b = Math.floor(Math.random() * 25) + 1 
     var c = 100 // author
     var d = 100 // user
@@ -86,7 +89,7 @@ inline: true
     }})
     var e = d-b
     var wtf = Math.floor(Math.random() * 25) + 1 
-    sleep(1*1000);
+    sleep(3*1000)
     message.channel.send({embed: {
       color: 0xff0000,
       title: "Battle status: In progress..",
@@ -104,7 +107,7 @@ inline: true
     }})
     var f = c-wtf
 var kys = Math.floor(Math.random() * 25) + 1 
-sleep(1*1000);
+sleep(3*1000)
     message.channel.send({embed: {
       color: 0x00ff00,
       title: "Battle status: In progress..",
@@ -122,7 +125,7 @@ sleep(1*1000);
     }})
     var y = e-kys
 var w0t = Math.floor(Math.random() * 25) + 1 
-    sleep(1*1000);
+    sleep(3*1000)
     message.channel.send({embed: {
       color: 0xff0000,
       title: "Battle status: In progress..",
@@ -140,7 +143,7 @@ var w0t = Math.floor(Math.random() * 25) + 1
     }})
     var wowow = f-w0t
 var lao = Math.floor(Math.random() * 25) + 1 
-sleep(1*1000);
+sleep(3*1000)
     message.channel.send({embed: {
       color: 0x00ff00,
       title: "Battle status: In progress..",
@@ -158,7 +161,7 @@ sleep(1*1000);
     }})
     var cb = y-lao
 var w0td = Math.floor(Math.random() * 25) + 1 
-    sleep(1*1000);
+    sleep(3*1000)
     message.channel.send({embed: {
       color: 0xff0000,
       title: "Battle status: In progress..",
@@ -176,7 +179,7 @@ var w0td = Math.floor(Math.random() * 25) + 1
     }})
     var ggg = wowow-w0td
 var siala = Math.floor(Math.random() * 25) + 1 
-    sleep(1*1000);
+    sleep(3*1000)
     message.channel.send({embed: {
       color: 0x00ff00,
       title: "Battle status: In progress..",
@@ -194,7 +197,7 @@ var siala = Math.floor(Math.random() * 25) + 1
     }})
 var fk = cb-siala
     var sialay = Math.floor(Math.random() * 25) + 1 
-        sleep(1*1000);
+        sleep(3*1000)
         message.channel.send({embed: {
           color: 0xff0000,
           title: "Battle status: In progress..",
@@ -210,7 +213,7 @@ var fk = cb-siala
           inline: true
           }]
         }})
-        sleep(1*1000);
+        sleep(3*1000)
 var win = ggg-sialay
 if (fk > ggg-sialay) {
         message.channel.send({embed: {
