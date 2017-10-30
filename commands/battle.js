@@ -1,19 +1,21 @@
+const Discord = require('discord.js');
 var sleep = require('system-sleep');
 exports.run = (client, message) => {
     const modlog = client.channels.find('name', 'bot-commands');
     const user = message.mentions.users.first();
 if (message.mentions.users.size < 1) return message.reply('You must mention someone to battle them.').catch(console.error);
 if (message.channel.id == client.channels.get(modlog.id)) {
+  console.log(message.channel.id)
 message.channel.send({embed: {
   color: 0xff0000,
   title: ":fire: Battle Starting in 3!",
   description: (``),
 fields: [{
-name: `${message.author}:`,
+name: `${message.author.username} :`,
 value: `100/100`,
 inline: true
 },{
-  name: `${user}:`,
+  name: `${user.username} :`,
   value: `100/100`,
   inline: true
   }],
@@ -24,11 +26,11 @@ message.channel.send({embed: {
   title: ":fire: Battle Starting in 2!",
   description: (``),
 fields: [{
-name: `${message.author}:`,
+name: `${message.author.username} :`,
 value: `100/100`,
 inline: true
 },{
-  name: `${user}:`,
+  name: `${user.username} :`,
   value: `100/100`,
   inline: true
   }],
@@ -39,11 +41,11 @@ message.channel.send({embed: {
   title: ":fire: Battle Starting in 1!",
   description: (``),
 fields: [{
-name: `${message.author}:`,
+name: `${message.author.username} :`,
 value: `100/100`,
 inline: true
 },{
-  name: `${user}:`,
+  name: `${user.username} :`,
   value: `100/100`,
   inline: true
   }],
@@ -54,11 +56,11 @@ message.channel.send({embed: {
   title: ":fire: Battle Started!",
   description: (``),
 fields: [{
-name: `${message.author}:`,
+name: `${message.author.username} :`,
 value: `100/100`,
 inline: true
 },{
-  name: `${user}:`,
+  name: `${user.username} :`,
   value: `100/100`,
   inline: true
   }],
@@ -71,14 +73,14 @@ inline: true
     message.channel.send({embed: {
       color: 0x00ff00,
       title: "Battle status: In progress..",
-      description: (`:inbox_tray: ${message.author} did ${b} damage to ${user}`),
+      description: (`:inbox_tray: ${message.author.username} did ${b} damage to ${user.username}`),
       footer: {text : "4 more turns"},
     fields: [{
-    name: `${message.author}:`,
+    name: `${message.author.username} :`,
     value: `${c-b}/100`,
     inline: true
     },{
-      name: `${user}:`,
+      name: `${user.username} :`,
       value: `${d}/100`,
       inline: true
       }]
@@ -89,14 +91,14 @@ inline: true
     message.channel.send({embed: {
       color: 0xff0000,
       title: "Battle status: In progress..",
-      description: (`:outbox_tray: ${user} did ${wtf} damage to ${message.author}`),
+      description: (`:outbox_tray: ${user.username} did ${wtf} damage to ${message.author.username}`),
       footer: {text : "4 more turns"},
     fields: [{
-    name: `${message.author}:`,
+    name: `${message.author.username} :`,
     value: `${c}/100`,
     inline: true
     },{
-      name: `${user}:`,
+      name: `${user.username} :`,
       value: `${d-wtf}/100`,
       inline: true
       }]
@@ -106,14 +108,14 @@ var kys = Math.floor(Math.random() * 25) + 1
     message.channel.send({embed: {
       color: 0x00ff00,
       title: "Battle status: In progress..",
-      description: (`:inbox_tray: ${message.author} did ${kys} damage to ${user}`),
+      description: (`:inbox_tray: ${message.author.username} did ${kys} damage to ${user.username}`),
       footer: {text : "3 more turns"},
     fields: [{
-    name: `${message.author}:`,
+    name: `${message.author.username} :`,
     value: `${e-kys}/100`,
     inline: true
     },{
-      name: `${user}:`,
+      name: `${user.username}:`,
       value: `${d}/100`,
       inline: true
       }]
@@ -124,14 +126,14 @@ var w0t = Math.floor(Math.random() * 25) + 1
     message.channel.send({embed: {
       color: 0xff0000,
       title: "Battle status: In progress..",
-      description: (`:outbox_tray: ${user} did ${w0t} damage to ${message.author}`),
+      description: (`:outbox_tray: ${user.username} did ${w0t} damage to ${message.author.username}`),
       footer: {text : "3 more turns"},
     fields: [{
-    name: `${message.author}:`,
+    name: `${message.author.username} :`,
     value: `${y}/100`,
     inline: true
     },{
-      name: `${user}:`,
+      name: `${user.username} :`,
       value: `${f-w0t}/100`,
       inline: true
       }]
@@ -141,14 +143,14 @@ var lao = Math.floor(Math.random() * 25) + 1
     message.channel.send({embed: {
       color: 0x00ff00,
       title: "Battle status: In progress..",
-      description: (`:inbox_tray: ${message.author} did ${lao} damage to ${user}`),
+      description: (`:inbox_tray: ${message.author.username} did ${lao} damage to ${user.username}`),
       footer: {text : "2 more turns"},
     fields: [{
-    name: `${message.author}:`,
+    name: `${message.author.username} :`,
     value: `${y-lao}/100`,
     inline: true
     },{
-      name: `${user}:`,
+      name: `${user.username} :`,
       value: `${wowow}/100`,
       inline: true
       }]
@@ -159,14 +161,14 @@ var w0td = Math.floor(Math.random() * 25) + 1
     message.channel.send({embed: {
       color: 0xff0000,
       title: "Battle status: In progress..",
-      description: (`:outbox_tray: ${user} did ${w0td} damage to ${message.author}`),
+      description: (`:outbox_tray: ${user.username} did ${w0td} damage to ${message.author.username}`),
       footer: {text : "2 more turns"},
     fields: [{
-    name: `${message.author}:`,
+    name: `${message.author.username} :`,
     value: `${y-w0td}/100`,
     inline: true
     },{
-      name: `${user}:`,
+      name: `${user.username} :`,
       value: `${cb}/100`,
       inline: true
       }]
@@ -177,14 +179,14 @@ var siala = Math.floor(Math.random() * 25) + 1
     message.channel.send({embed: {
       color: 0x00ff00,
       title: "Battle status: In progress..",
-      description: (`:inbox_tray: ${message.author} did ${siala} damage to ${user}`),
+      description: (`:inbox_tray: ${message.author.username} did ${siala} damage to ${user.username}`),
       footer: {text : "1 more turn"},
     fields: [{
-    name: `${message.author}:`,
+    name: `${message.author.username} :`,
     value: `${ggg}/100`,
     inline: true
     },{
-      name: `${user}:`,
+      name: `${user.username} :`,
       value: `${cb-siala}/100`,
       inline: true
       }]
@@ -195,14 +197,14 @@ var fk = cb-siala
         message.channel.send({embed: {
           color: 0xff0000,
           title: "Battle status: In progress..",
-          description: (`:outbox_tray: ${user} did ${sialay} damage to ${message.author}`),
+          description: (`:outbox_tray: ${user.username} did ${sialay} damage to ${message.author.username}`),
           footer: {text : "Last turn"},
         fields: [{
-        name: `${message.author}:`,
+        name: `${message.author.username} :`,
         value: `${ggg-sialay}/100`,
         inline: true
         },{
-          name: `${user}:`,
+          name: `${user.username} :`,
           value: `${fk}/100`,
           inline: true
           }]
@@ -213,14 +215,14 @@ if (fk > ggg-sialay) {
         message.channel.send({embed: {
           color: 0xffff00,
           title: "Battle status: Round ended!",
-          description: (`:trophy: ${user} won the battle!`),
-          footer: {text : `Winner is ${user}`},
+          description: (`:trophy: ${user.username} won the battle!`),
+          footer: {text : `Winner is ${user.username}`},
         fields: [{
-        name: `${message.author}:`,
+        name: `${message.author.username} :`,
         value: `${ggg-sialay}/100`,
         inline: true
         },{
-          name: `${user}:`,
+          name: `${user.username} :`,
           value: `${fk}/100`,
           inline: true
           }]
@@ -230,14 +232,14 @@ if (fk > ggg-sialay) {
     message.channel.send({embed: {
       color: 0xff0000,
       title: "Battle status: Round ended!",
-      description: (`:trophy: ${message.author} won the battle!`),
-      footer: {text : `Winner is ${message.author}`},
+      description: (`:trophy: ${message.author.username} won the battle!`),
+      footer: {text : `Winner is ${message.author.username}`},
     fields: [{
-    name: `${message.author}:`,
+    name: `${message.author.username} :`,
     value: `${ggg-sialay}/100`,
     inline: true
     },{
-      name: `${user}:`,
+      name: `${user.username} :`,
       value: `${fk}/100`,
       inline: true
       }]
@@ -251,7 +253,7 @@ if (fk > ggg-sialay) {
     title: "Quiet Channel",
     description: (``),
   fields: [{
-  name: `${message.author}`,
+  name: `${message.author.username}`,
   value: `This is a quiet channel, please do not use ;battle here! Head over to #bot-commands instead.`,
   inline: true
   }],
