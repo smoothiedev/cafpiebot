@@ -34,7 +34,8 @@ fields: [{
   .addField("Ban Reason:",`${reason}`,false)
 
   message.guild.ban(user, 2);
-client.channels.get(modlog.id).send({embed})
+client.channels.get(modlog.id).send({embed});
+message.channel.send({embed});
 };
 
 exports.conf = {
