@@ -66,7 +66,7 @@ inline: true
 }})
   while(true) {
     sleep(3*1000) // sleep for 1 seconds
-    var b = Math.floor(Math.random() * 25) + 1 
+    var b = Math.floor(Math.random() * 25) + 5
     var c = 100 // author
     var d = 100 // user
     message.channel.send({embed: {
@@ -85,7 +85,7 @@ inline: true
       }]
     }})
     var e = d-b
-    var wtf = Math.floor(Math.random() * 25) + 1 
+    var wtf = Math.floor(Math.random() * 25) + 5
     sleep(3*1000)
     message.channel.send({embed: {
       color: 0xff0000,
@@ -103,7 +103,7 @@ inline: true
       }]
     }})
     var f = c-wtf
-var kys = Math.floor(Math.random() * 25) + 1 
+var kys = Math.floor(Math.random() * 25) + 5
 sleep(3*1000)
     message.channel.send({embed: {
       color: 0x00ff00,
@@ -121,7 +121,7 @@ sleep(3*1000)
       }]
     }})
     var y = e-kys
-var w0t = Math.floor(Math.random() * 25) + 1 
+var w0t = Math.floor(Math.random() * 25) + 5
     sleep(3*1000)
     message.channel.send({embed: {
       color: 0xff0000,
@@ -139,7 +139,7 @@ var w0t = Math.floor(Math.random() * 25) + 1
       }]
     }})
     var wowow = f-w0t
-var lao = Math.floor(Math.random() * 25) + 1 
+var lao = Math.floor(Math.random() * 25) + 5
 sleep(3*1000)
     message.channel.send({embed: {
       color: 0x00ff00,
@@ -157,7 +157,7 @@ sleep(3*1000)
       }]
     }})
     var cb = y-lao
-var w0td = Math.floor(Math.random() * 25) + 1 
+var w0td = Math.floor(Math.random() * 25) + 5
     sleep(3*1000)
     message.channel.send({embed: {
       color: 0xff0000,
@@ -175,7 +175,7 @@ var w0td = Math.floor(Math.random() * 25) + 1
       }]
     }})
     var ggg = wowow-w0td
-var siala = Math.floor(Math.random() * 25) + 1 
+var siala = Math.floor(Math.random() * 25) + 5
     sleep(3*1000)
     message.channel.send({embed: {
       color: 0x00ff00,
@@ -193,7 +193,7 @@ var siala = Math.floor(Math.random() * 25) + 1
       }]
     }})
 var fk = cb-siala
-    var sialay = Math.floor(Math.random() * 25) + 1 
+    var sialay = Math.floor(Math.random() * 25) + 5
         sleep(3*1000)
         message.channel.send({embed: {
           color: 0xff0000,
