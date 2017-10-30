@@ -1,10 +1,21 @@
 const Discord = require('discord.js');
 exports.run = (client, message) => {
-    const modlog = client.channels.find('name', 'pie-log');
+  const modlog = client.channels.find('name', 'pie-log');
     const user = message.mentions.users.first();
 if (message.mentions.users.size < 1) return message.reply('You must mention someone to insult them.').catch(console.error);
 message.delete()
-
+if (message.channel.name == "on-duty"){
+  message.channel.send({embed: {
+    color: 0xff0000,
+    title: "Quiet Channel",
+    description: (``),
+  fields: [{
+  name: `${message.author.username}`,
+  value: `This is a quiet channel, please do not use ;insult here as this is for #on-duty only! Please head over to other channels such as #off-duty or #bot-commands.`,
+  inline: true
+  }],
+  }})
+} else {
 var b = Math.floor(Math.random() * 15) + 1  
 console.log(`${b}`)
 if (b == 1) {
@@ -216,6 +227,7 @@ client.channels.get(modlog.id).send({embed: {
     }
   }
 })
+}
 };
 
 
