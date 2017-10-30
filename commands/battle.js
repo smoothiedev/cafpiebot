@@ -76,15 +76,15 @@ inline: true
       footer: {text : "4 more turns"},
     fields: [{
     name: `${message.author.username} :`,
-    value: `${c-b}/100`,
+    value: `${c}/100`,
     inline: true
     },{
       name: `${user.username} :`,
-      value: `${d}/100`,
+      value: `${d-b}/100`,
       inline: true
       }]
     }})
-    var e = c-b
+    var e = d-b
     var wtf = Math.floor(Math.random() * 25) + 1 
     sleep(1*1000);
     message.channel.send({embed: {
@@ -94,15 +94,15 @@ inline: true
       footer: {text : "4 more turns"},
     fields: [{
     name: `${message.author.username} :`,
-    value: `${c}/100`,
+    value: `${c-wtf}/100`,
     inline: true
     },{
       name: `${user.username} :`,
-      value: `${d-wtf}/100`,
+      value: `${e}/100`,
       inline: true
       }]
     }})
-    var f = d-wtf
+    var f = c-wtf
 var kys = Math.floor(Math.random() * 25) + 1 
 sleep(1*1000);
     message.channel.send({embed: {
@@ -112,11 +112,11 @@ sleep(1*1000);
       footer: {text : "3 more turns"},
     fields: [{
     name: `${message.author.username} :`,
-    value: `${e-kys}/100`,
+    value: `${f}/100`,
     inline: true
     },{
       name: `${user.username}:`,
-      value: `${d}/100`,
+      value: `${e-kys}/100`,
       inline: true
       }]
     }})
@@ -130,11 +130,11 @@ var w0t = Math.floor(Math.random() * 25) + 1
       footer: {text : "3 more turns"},
     fields: [{
     name: `${message.author.username} :`,
-    value: `${y}/100`,
+    value: `${f-w0t}/100`,
     inline: true
     },{
       name: `${user.username} :`,
-      value: `${f-w0t}/100`,
+      value: `${y}/100`,
       inline: true
       }]
     }})
@@ -148,11 +148,11 @@ sleep(1*1000);
       footer: {text : "2 more turns"},
     fields: [{
     name: `${message.author.username} :`,
-    value: `${y-lao}/100`,
+    value: `${wowow}/100`,
     inline: true
     },{
       name: `${user.username} :`,
-      value: `${wowow}/100`,
+      value: `${y-lao}/100`,
       inline: true
       }]
     }})
@@ -166,7 +166,7 @@ var w0td = Math.floor(Math.random() * 25) + 1
       footer: {text : "2 more turns"},
     fields: [{
     name: `${message.author.username} :`,
-    value: `${y-w0td}/100`,
+    value: `${wowow-w0td}/100`,
     inline: true
     },{
       name: `${user.username} :`,
@@ -174,7 +174,7 @@ var w0td = Math.floor(Math.random() * 25) + 1
       inline: true
       }]
     }})
-    var ggg = y-w0td
+    var ggg = wowow-w0td
 var siala = Math.floor(Math.random() * 25) + 1 
     sleep(1*1000);
     message.channel.send({embed: {
