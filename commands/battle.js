@@ -38,7 +38,7 @@ inline: true
       name: `${user}:`,
       value: `${d}/100`,
       inline: true
-      }],
+      }]
     }})
     var e = c-b
     var wtf = Math.floor(Math.random() * 25) + 1 
@@ -56,7 +56,7 @@ inline: true
       name: `${user}:`,
       value: `${d-wtf}/100`,
       inline: true
-      }],
+      }]
     }})
     var f = d-wtf
 var kys = Math.floor(Math.random() * 25) + 1 
@@ -73,7 +73,7 @@ var kys = Math.floor(Math.random() * 25) + 1
       name: `${user}:`,
       value: `${d}/100`,
       inline: true
-      }],
+      }]
     }})
     var y = e-kys
 var w0t = Math.floor(Math.random() * 25) + 1 
@@ -91,7 +91,7 @@ var w0t = Math.floor(Math.random() * 25) + 1
       name: `${user}:`,
       value: `${f-w0t}/100`,
       inline: true
-      }],
+      }]
     }})
     var wowow = f-w0t
 var lao = Math.floor(Math.random() * 25) + 1 
@@ -108,7 +108,7 @@ var lao = Math.floor(Math.random() * 25) + 1
       name: `${user}:`,
       value: `${wowow}/100`,
       inline: true
-      }],
+      }]
     }})
     var cb = y-lao
 var w0td = Math.floor(Math.random() * 25) + 1 
@@ -126,7 +126,7 @@ var w0td = Math.floor(Math.random() * 25) + 1
       name: `${user}:`,
       value: `${cb}/100`,
       inline: true
-      }],
+      }]
     }})
     var ggg = y-w0td
 var siala = Math.floor(Math.random() * 25) + 1 
@@ -144,7 +144,7 @@ var siala = Math.floor(Math.random() * 25) + 1
       name: `${user}:`,
       value: `${cb-siala}/100`,
       inline: true
-      }],
+      }]
     }})
 var fk = cb-siala
     var sialay = Math.floor(Math.random() * 25) + 1 
@@ -162,7 +162,7 @@ var fk = cb-siala
           name: `${user}:`,
           value: `${fk}/100`,
           inline: true
-          }],
+          }]
         }})
         sleep(1*1000);
 var win = ggg-sialay
@@ -180,7 +180,7 @@ if (fk > ggg-sialay) {
           name: `${user}:`,
           value: `${fk}/100`,
           inline: true
-          }],
+          }]
         }})
   } else {
     message.channel.send({embed: {
@@ -196,7 +196,7 @@ if (fk > ggg-sialay) {
       name: `${user}:`,
       value: `${fk}/100`,
       inline: true
-      }],
+      }]
     }})
 }
 }})
