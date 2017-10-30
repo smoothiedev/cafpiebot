@@ -4,8 +4,7 @@ exports.run = (client, message) => {
     const modlog = client.channels.find('name', 'bot-commands');
     const user = message.mentions.users.first();
 if (message.mentions.users.size < 1) return message.reply('You must mention someone to battle them.').catch(console.error);
-if (message.channel.id == client.channels.get(modlog.id)) {
-  console.log(message.channel.id)
+if (message.channel.name == "bot-commands") {
 message.channel.send({embed: {
   color: 0xff0000,
   title: ":fire: Battle Starting in 3!",
