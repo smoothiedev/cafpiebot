@@ -9,7 +9,6 @@ exports.run = (client, message, args) => {
 
   if (!message.guild.member(user).kickable) return message.reply('I cannot kick that member');
 
-
   user.sendMessage({embed: {
     color: 0xff0000,
     title: "Guild Kick",
@@ -37,7 +36,8 @@ fields: [{
 
 
     message.guild.member(user).kick();
-client.channels.get(modlog.id).send({embed})
+client.channels.get(modlog.id).send({embed});
+message.channel.send({embed});
 };
 
 
