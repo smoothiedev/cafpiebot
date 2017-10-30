@@ -24,7 +24,7 @@ inline: true
     var b = Math.floor(Math.random() * 25) + 1 
     var c = 100 // author
     var d = 100 // user
-    message.channel.delete()
+    message.delete()
     message.channel.send({embed: {
       color: 0x00ff00,
       title: "Battle status: In progress..",
