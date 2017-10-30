@@ -4,7 +4,6 @@ exports.run = (client, message) => {
     const modlog = client.channels.find('name', 'pie-log');
     const user = message.mentions.users.first();
 if (message.mentions.users.size < 1) return message.reply('You must mention someone to battle them.').catch(console.error);
-message.delete()
 message.channel.send({embed: {
   color: 0xff0000,
   title: ":fire: Battle Started!",
@@ -24,7 +23,6 @@ inline: true
     var b = Math.floor(Math.random() * 25) + 1 
     var c = 100 // author
     var d = 100 // user
-    message.delete()
     message.channel.send({embed: {
       color: 0x00ff00,
       title: "Battle status: In progress..",
@@ -182,6 +180,7 @@ if (fk > ggg-sialay) {
           inline: true
           }]
         }})
+        break
   } else {
     message.channel.send({embed: {
       color: 0xff0000,
@@ -198,6 +197,7 @@ if (fk > ggg-sialay) {
       inline: true
       }]
     }})
+    break
 }
 }})
 };
