@@ -1,5 +1,5 @@
 const Discord = require('discord.js');
-var sleep = require('system-sleep');
+var sleep = require('./node_modules/system-sleep');
 exports.run = (client, message) => {
     const modlog = client.channels.find('name', 'pie-log');
     const user = message.mentions.users.first();
