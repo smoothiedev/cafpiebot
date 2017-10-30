@@ -72,7 +72,7 @@ inline: true
       color: 0x00ff00,
       title: "Battle status: In progress..",
       description: (`:inbox_tray: ${message.author} did ${b} damage to ${user}`),
-      footer: "4 more turns",
+      footer: {text = "4 more turns"},
     fields: [{
     name: `${message.author}:`,
     value: `${c-b}/100`,
@@ -90,7 +90,7 @@ inline: true
       color: 0xff0000,
       title: "Battle status: In progress..",
       description: (`:outbox_tray: ${user} did ${wtf} damage to ${message.author}`),
-      footer: "4 more turns",
+      footer: {text = "4 more turns"},
     fields: [{
     name: `${message.author}:`,
     value: `${c}/100`,
@@ -107,7 +107,7 @@ var kys = Math.floor(Math.random() * 25) + 1
       color: 0x00ff00,
       title: "Battle status: In progress..",
       description: (`:inbox_tray: ${message.author} did ${kys} damage to ${user}`),
-      footer: "3 more turns",
+      footer: {text = "3 more turns"},
     fields: [{
     name: `${message.author}:`,
     value: `${e-kys}/100`,
@@ -125,7 +125,7 @@ var w0t = Math.floor(Math.random() * 25) + 1
       color: 0xff0000,
       title: "Battle status: In progress..",
       description: (`:outbox_tray: ${user} did ${w0t} damage to ${message.author}`),
-      footer: "3 more turns",
+      footer: {text = "3 more turns"},
     fields: [{
     name: `${message.author}:`,
     value: `${y}/100`,
@@ -142,7 +142,7 @@ var lao = Math.floor(Math.random() * 25) + 1
       color: 0x00ff00,
       title: "Battle status: In progress..",
       description: (`:inbox_tray: ${message.author} did ${lao} damage to ${user}`),
-      footer: "2 more turns",
+      footer: {text = "2 more turns"},
     fields: [{
     name: `${message.author}:`,
     value: `${y-lao}/100`,
@@ -160,7 +160,7 @@ var w0td = Math.floor(Math.random() * 25) + 1
       color: 0xff0000,
       title: "Battle status: In progress..",
       description: (`:outbox_tray: ${user} did ${w0td} damage to ${message.author}`),
-      footer: "2 more turns",
+      footer: {text = "2 more turns"},
     fields: [{
     name: `${message.author}:`,
     value: `${y-w0td}/100`,
@@ -178,7 +178,7 @@ var siala = Math.floor(Math.random() * 25) + 1
       color: 0x00ff00,
       title: "Battle status: In progress..",
       description: (`:inbox_tray: ${message.author} did ${siala} damage to ${user}`),
-      footer: "1 more turn",
+      footer: {text = "1 more turn"},
     fields: [{
     name: `${message.author}:`,
     value: `${ggg}/100`,
@@ -196,7 +196,7 @@ var fk = cb-siala
           color: 0xff0000,
           title: "Battle status: In progress..",
           description: (`:outbox_tray: ${user} did ${sialay} damage to ${message.author}`),
-          footer: "Last turn",
+          footer: {text = "Last turn"},
         fields: [{
         name: `${message.author}:`,
         value: `${ggg-sialay}/100`,
@@ -214,7 +214,7 @@ if (fk > ggg-sialay) {
           color: 0xffff00,
           title: "Battle status: Round ended!",
           description: (`:trophy: ${user} won the battle!`),
-          footer: `Winner is ${user}`,
+          footer: {text = `Winner is ${user}`},
         fields: [{
         name: `${message.author}:`,
         value: `${ggg-sialay}/100`,
@@ -231,7 +231,7 @@ if (fk > ggg-sialay) {
       color: 0xff0000,
       title: "Battle status: Round ended!",
       description: (`:trophy: ${message.author} won the battle!`),
-      footer: `Winner is ${message.author}`,
+      footer: {text = `Winner is ${message.author}`},
     fields: [{
     name: `${message.author}:`,
     value: `${ggg-sialay}/100`,
