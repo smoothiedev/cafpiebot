@@ -19,7 +19,7 @@ if (message.channel.name == "on-duty"){
 var b = Math.floor(Math.random() * 20) + 1  
 if (b == 1) {
   message.channel.send({embed: {
-    color: 0xff0000,
+    color: 0x000000,
     title: ":8ball: Pie's Magic 8 - ball :8ball:",
     description: (``),
     footer: {text: "Try your luck with Pie-Bot's 8ball!"},
@@ -34,7 +34,7 @@ fields: [{
 } else  {
   if (b == 2) {
   message.channel.send({embed: {
-    color: 0xff0000,
+    color: 0x000000,
     title: ":8ball: Pie's Magic 8 - ball :8ball:",
     description: (``),
     footer: {text: "Try your luck with Pie-Bot's 8ball!"},
@@ -49,7 +49,7 @@ fields: [{
   } else {
 if (b == 3) { 
     message.channel.send({embed: {
-      color: 0xff0000,
+      color: 0x000000,
       title: ":8ball: Pie's Magic 8 - ball :8ball:",
       description: (``),
       footer: {text: "Try your luck with Pie-Bot's 8ball!"},
@@ -65,7 +65,7 @@ if (b == 3) {
       else { 
         if (b == 4) { 
           message.channel.send({embed: {
-            color: 0xff0000,
+            color: 0x000000,
             title: ":8ball: Pie's Magic 8 - ball :8ball:",
             description: (``),
             footer: {text: "Try your luck with Pie-Bot's 8ball!"},
@@ -81,7 +81,7 @@ if (b == 3) {
             if (b == 5) { 
           
               message.channel.send({embed: {
-                color: 0xff0000,
+                color: 0x000000,
                 title: ":8ball: Pie's Magic 8 - ball :8ball:",
                 description: (``),
                 footer: {text: "Try your luck with Pie-Bot's 8ball!"},
@@ -96,7 +96,7 @@ if (b == 3) {
               } else {
                 if (b == 6) { 
                   message.channel.send({embed: {
-                    color: 0xff0000,
+                    color: 0x000000,
                     title: ":8ball: Pie's Magic 8 - ball :8ball:",
                     description: (``),
                     footer: {text: "Try your luck with Pie-Bot's 8ball!"},
@@ -113,7 +113,7 @@ if (b == 3) {
                     if (b == 7) { 
                         
                       message.channel.send({embed: {
-                        color: 0xff0000,
+                        color: 0x000000,
                         title: ":8ball: Pie's Magic 8 - ball :8ball:",
                         description: (``),
                         footer: {text: "Try your luck with Pie-Bot's 8ball!"},
@@ -128,7 +128,7 @@ if (b == 3) {
                       }else {
                         if (b == 8) { 
                           message.channel.send({embed: {
-                            color: 0xff0000,
+                            color: 0x000000,
                             title: ":8ball: Pie's Magic 8 - ball :8ball:",
                             description: (``),
                             footer: {text: "Try your luck with Pie-Bot's 8ball!"},
@@ -143,7 +143,7 @@ if (b == 3) {
                           }else {
                             if (b == 9) { 
                               message.channel.send({embed: {
-                                color: 0xff0000,
+                                color: 0x000000,
                                 title: ":8ball: Pie's Magic 8 - ball :8ball:",
                                 description: (``),
                                 footer: {text: "Try your luck with Pie-Bot's 8ball!"},
@@ -158,7 +158,7 @@ if (b == 3) {
                               }else {
                                 if (b == 10) {  
                                   message.channel.send({embed: {
-                                    color: 0xff0000,
+                                    color: 0x000000,
                                     title: ":8ball: Pie's Magic 8 - ball :8ball:",
                                     description: (``),
                                     footer: {text: "Try your luck with Pie-Bot's 8ball!"},
@@ -173,7 +173,7 @@ if (b == 3) {
                                 }else {
                                   if (b == 11) {  
                                     message.channel.send({embed: {
-                                      color: 0xff0000,
+                                      color: 0x000000,
                                       title: ":8ball: Pie's Magic 8 - ball :8ball:",
                                       description: (``),
                                       footer: {text: "Try your luck with Pie-Bot's 8ball!"},
@@ -188,7 +188,7 @@ if (b == 3) {
                                   }else {
                                     if (b == 12) {  
                                       message.channel.send({embed: {
-                                        color: 0xff0000,
+                                        color: 0x000000,
                                         title: ":8ball: Pie's Magic 8 - ball :8ball:",
                                         description: (``),
                                         footer: {text: "Try your luck with Pie-Bot's 8ball!"},
@@ -203,7 +203,7 @@ if (b == 3) {
                                     }else {
                                       if (b == 13) {  
                                         message.channel.send({embed: {
-                                          color: 0xff0000,
+                                          color: 0x000000,
                                           title: ":8ball: Pie's Magic 8 - ball :8ball:",
                                           description: (``),
                                           footer: {text: "Try your luck with Pie-Bot's 8ball!"},
@@ -217,7 +217,7 @@ if (b == 3) {
                                         }})}else {
                                           if (b == 14) {  
                                             message.channel.send({embed: {
-                                              color: 0xff0000,
+                                              color: 0x000000,
                                               title: ":8ball: Pie's Magic 8 - ball :8ball:",
                                               description: (``),
                                               footer: {text: "Try your luck with Pie-Bot's 8ball!"},
@@ -232,7 +232,7 @@ if (b == 3) {
                                           }else {
                                             if (b == 15) {  
                                               message.channel.send({embed: {
-                                                color: 0xff0000,
+                                                color: 0x000000,
                                                 title: ":8ball: Pie's Magic 8 - ball :8ball:",
                                                 description: (``),
                                                 footer: {text: "Try your luck with Pie-Bot's 8ball!"},
@@ -247,7 +247,7 @@ if (b == 3) {
                                   } else {
                                     if (b == 16) {  
                                       message.channel.send({embed: {
-                                        color: 0xff0000,
+                                        color: 0x000000,
                                         title: ":8ball: Pie's Magic 8 - ball :8ball:",
                                         description: (``),
                                         footer: {text: "Try your luck with Pie-Bot's 8ball!"},
@@ -261,7 +261,7 @@ if (b == 3) {
                                       }})  } else {
                                         if (b == 17) {  
                                           message.channel.send({embed: {
-                                            color: 0xff0000,
+                                            color: 0x000000,
                                             title: ":8ball: Pie's Magic 8 - ball :8ball:",
                                             description: (``),
                                             footer: {text: "Try your luck with Pie-Bot's 8ball!"},
@@ -275,7 +275,7 @@ if (b == 3) {
                                           }}) } else {
                                             if (b == 18) {  
                                               message.channel.send({embed: {
-                                                color: 0xff0000,
+                                                color: 0x000000,
                                                 title: ":8ball: Pie's Magic 8 - ball :8ball:",
                                                 description: (``),
                                                 footer: {text: "Try your luck with Pie-Bot's 8ball!"},
@@ -289,7 +289,7 @@ if (b == 3) {
                                               }}) } else {
                                                 if (b == 19) {  
                                                   message.channel.send({embed: {
-                                                    color: 0xff0000,
+                                                    color: 0x000000,
                                                     title: ":8ball: Pie's Magic 8 - ball :8ball:",
                                                     description: (``),
                                                     footer: {text: "Try your luck with Pie-Bot's 8ball!"},
@@ -303,7 +303,7 @@ if (b == 3) {
                                                   }}) } else {
                                                     if (b == 20) {  
                                                       message.channel.send({embed: {
-                                                        color: 0xff0000,
+                                                        color: 0x000000,
                                                         title: ":8ball: Pie's Magic 8 - ball :8ball:",
                                                         description: (``),
                                                         footer: {text: "Try your luck with Pie-Bot's 8ball!"},
