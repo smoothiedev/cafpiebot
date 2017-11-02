@@ -1,8 +1,8 @@
 const Discord = require('discord.js');
-exports.run = (client, message, args) => {
+exports.run = (client, message) => {
   const modlog = client.channels.find('name', 'pie-log');
-    const reason = args.slice(1).join(' ');
-if (reason.length < 1) return message.reply('You must supply a reason for the kick.');
+  let reason = message.content.split(" ").join(" ").slice(5)
+if (reason.length < 1) return message.reply('You must supply a message for 8ball.');
 message.delete()
 if (message.channel.name == "on-duty"){
   message.channel.send({embed: {
@@ -22,7 +22,7 @@ if (b == 1) {
     color: 0xff0000,
     title: ":8ball: Pie's Magic 8 - ball :8ball:",
     description: (``),
-    footer: {text: ":8ball: Try your luck! :8ball:"},
+    footer: {text: "Try your luck with Pie-Bot's 8ball!"},
 fields: [{
   name: "Your Message:",
   value: `${reason}`
@@ -37,7 +37,7 @@ fields: [{
     color: 0xff0000,
     title: ":8ball: Pie's Magic 8 - ball :8ball:",
     description: (``),
-    footer: {text: ":8ball: Try your luck! :8ball:"},
+    footer: {text: "Try your luck with Pie-Bot's 8ball!"},
 fields: [{
   name: "Your Message:",
   value: `${reason}`
@@ -52,7 +52,7 @@ if (b == 3) {
       color: 0xff0000,
       title: ":8ball: Pie's Magic 8 - ball :8ball:",
       description: (``),
-      footer: {text: ":8ball: Try your luck! :8ball:"},
+      footer: {text: "Try your luck with Pie-Bot's 8ball!"},
   fields: [{
     name: "Your Message:",
     value: `${reason}`
@@ -68,7 +68,7 @@ if (b == 3) {
             color: 0xff0000,
             title: ":8ball: Pie's Magic 8 - ball :8ball:",
             description: (``),
-            footer: {text: ":8ball: Try your luck! :8ball:"},
+            footer: {text: "Try your luck with Pie-Bot's 8ball!"},
         fields: [{
           name: "Your Message:",
           value: `${reason}`
@@ -84,7 +84,7 @@ if (b == 3) {
                 color: 0xff0000,
                 title: ":8ball: Pie's Magic 8 - ball :8ball:",
                 description: (``),
-                footer: {text: ":8ball: Try your luck! :8ball:"},
+                footer: {text: "Try your luck with Pie-Bot's 8ball!"},
             fields: [{
               name: "Your Message:",
               value: `${reason}`
@@ -99,7 +99,7 @@ if (b == 3) {
                     color: 0xff0000,
                     title: ":8ball: Pie's Magic 8 - ball :8ball:",
                     description: (``),
-                    footer: {text: ":8ball: Try your luck! :8ball:"},
+                    footer: {text: "Try your luck with Pie-Bot's 8ball!"},
                 fields: [{
                   name: "Your Message:",
                   value: `${reason}`
@@ -116,7 +116,7 @@ if (b == 3) {
                         color: 0xff0000,
                         title: ":8ball: Pie's Magic 8 - ball :8ball:",
                         description: (``),
-                        footer: {text: ":8ball: Try your luck! :8ball:"},
+                        footer: {text: "Try your luck with Pie-Bot's 8ball!"},
                     fields: [{
                       name: "Your Message:",
                       value: `${reason}`
@@ -131,7 +131,7 @@ if (b == 3) {
                             color: 0xff0000,
                             title: ":8ball: Pie's Magic 8 - ball :8ball:",
                             description: (``),
-                            footer: {text: ":8ball: Try your luck! :8ball:"},
+                            footer: {text: "Try your luck with Pie-Bot's 8ball!"},
                         fields: [{
                           name: "Your Message:",
                           value: `${reason}`
@@ -146,7 +146,7 @@ if (b == 3) {
                                 color: 0xff0000,
                                 title: ":8ball: Pie's Magic 8 - ball :8ball:",
                                 description: (``),
-                                footer: {text: ":8ball: Try your luck! :8ball:"},
+                                footer: {text: "Try your luck with Pie-Bot's 8ball!"},
                             fields: [{
                               name: "Your Message:",
                               value: `${reason}`
@@ -161,7 +161,7 @@ if (b == 3) {
                                     color: 0xff0000,
                                     title: ":8ball: Pie's Magic 8 - ball :8ball:",
                                     description: (``),
-                                    footer: {text: ":8ball: Try your luck! :8ball:"},
+                                    footer: {text: "Try your luck with Pie-Bot's 8ball!"},
                                 fields: [{
                                   name: "Your Message:",
                                   value: `${reason}`
@@ -176,7 +176,7 @@ if (b == 3) {
                                       color: 0xff0000,
                                       title: ":8ball: Pie's Magic 8 - ball :8ball:",
                                       description: (``),
-                                      footer: {text: ":8ball: Try your luck! :8ball:"},
+                                      footer: {text: "Try your luck with Pie-Bot's 8ball!"},
                                   fields: [{
                                     name: "Your Message:",
                                     value: `${reason}`
@@ -191,7 +191,7 @@ if (b == 3) {
                                         color: 0xff0000,
                                         title: ":8ball: Pie's Magic 8 - ball :8ball:",
                                         description: (``),
-                                        footer: {text: ":8ball: Try your luck! :8ball:"},
+                                        footer: {text: "Try your luck with Pie-Bot's 8ball!"},
                                     fields: [{
                                       name: "Your Message:",
                                       value: `${reason}`
@@ -206,7 +206,7 @@ if (b == 3) {
                                           color: 0xff0000,
                                           title: ":8ball: Pie's Magic 8 - ball :8ball:",
                                           description: (``),
-                                          footer: {text: ":8ball: Try your luck! :8ball:"},
+                                          footer: {text: "Try your luck with Pie-Bot's 8ball!"},
                                       fields: [{
                                         name: "Your Message:",
                                         value: `${reason}`
@@ -220,7 +220,7 @@ if (b == 3) {
                                               color: 0xff0000,
                                               title: ":8ball: Pie's Magic 8 - ball :8ball:",
                                               description: (``),
-                                              footer: {text: ":8ball: Try your luck! :8ball:"},
+                                              footer: {text: "Try your luck with Pie-Bot's 8ball!"},
                                           fields: [{
                                             name: "Your Message:",
                                             value: `${reason}`
@@ -235,7 +235,7 @@ if (b == 3) {
                                                 color: 0xff0000,
                                                 title: ":8ball: Pie's Magic 8 - ball :8ball:",
                                                 description: (``),
-                                                footer: {text: ":8ball: Try your luck! :8ball:"},
+                                                footer: {text: "Try your luck with Pie-Bot's 8ball!"},
                                             fields: [{
                                               name: "Your Message:",
                                               value: `${reason}`
@@ -250,7 +250,7 @@ if (b == 3) {
                                         color: 0xff0000,
                                         title: ":8ball: Pie's Magic 8 - ball :8ball:",
                                         description: (``),
-                                        footer: {text: ":8ball: Try your luck! :8ball:"},
+                                        footer: {text: "Try your luck with Pie-Bot's 8ball!"},
                                     fields: [{
                                       name: "Your Message:",
                                       value: `${reason}`
@@ -264,7 +264,7 @@ if (b == 3) {
                                             color: 0xff0000,
                                             title: ":8ball: Pie's Magic 8 - ball :8ball:",
                                             description: (``),
-                                            footer: {text: ":8ball: Try your luck! :8ball:"},
+                                            footer: {text: "Try your luck with Pie-Bot's 8ball!"},
                                         fields: [{
                                           name: "Your Message:",
                                           value: `${reason}`
@@ -278,7 +278,7 @@ if (b == 3) {
                                                 color: 0xff0000,
                                                 title: ":8ball: Pie's Magic 8 - ball :8ball:",
                                                 description: (``),
-                                                footer: {text: ":8ball: Try your luck! :8ball:"},
+                                                footer: {text: "Try your luck with Pie-Bot's 8ball!"},
                                             fields: [{
                                               name: "Your Message:",
                                               value: `${reason}`
@@ -292,7 +292,7 @@ if (b == 3) {
                                                     color: 0xff0000,
                                                     title: ":8ball: Pie's Magic 8 - ball :8ball:",
                                                     description: (``),
-                                                    footer: {text: ":8ball: Try your luck! :8ball:"},
+                                                    footer: {text: "Try your luck with Pie-Bot's 8ball!"},
                                                 fields: [{
                                                   name: "Your Message:",
                                                   value: `${reason}`
@@ -306,7 +306,7 @@ if (b == 3) {
                                                         color: 0xff0000,
                                                         title: ":8ball: Pie's Magic 8 - ball :8ball:",
                                                         description: (``),
-                                                        footer: {text: ":8ball: Try your luck! :8ball:"},
+                                                        footer: {text: "Try your luck with Pie-Bot's 8ball!"},
                                                     fields: [{
                                                       name: "Your Message:",
                                                       value: `${reason}`
