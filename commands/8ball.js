@@ -1,5 +1,5 @@
 const Discord = require('discord.js');
-exports.run = (client, message) => {
+exports.run = (client, message, args) => {
   const modlog = client.channels.find('name', 'pie-log');
     const reason = args.slice(1).join(' ');
 if (reason.length < 1) return message.reply('You must supply a reason for the kick.');
