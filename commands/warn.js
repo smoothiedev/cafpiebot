@@ -9,10 +9,11 @@ exports.run = async (client, message, args) => {
   const warn2 = client.guilds.get(message.guild.id).roles.find('name', 'Warning 2');
   const warn3 = client.guilds.get(message.guild.id).roles.find('name', 'Warning 3');
   const muteRole = client.guilds.get(message.guild.id).roles.find('name', 'Muted');
+  const reason = args.splice(1, args.length).join(' ');
   const caseNum = await caseNumber(client, modlog);
   if (!modlog) return message.reply('I cannot find a mod-log channel');
   if (message.mentions.users.size < 1) return message.reply('You must mention someone to warn them.').catch(console.error);
-  const reason = args.splice(1, args.length).join(' ') || `Awaiting moderator's input. Use ${settings.prefix}reason ${caseNum} <reason>.`;
+  if (reason.length < 1) return message.reply('Please specify a reason for the warn!').catch(console.error);
   const embed = new RichEmbed()
   .setColor(0xffff00)
   .setTimestamp()
