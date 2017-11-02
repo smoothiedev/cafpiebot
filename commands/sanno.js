@@ -22,6 +22,7 @@ description: `**Announcer:** ${message.author}\n**Message:** ${say}`,
     }
   }
 })
+client.channels.get(modlog.id).send('@everyone')
 };
 
 exports.conf = {
