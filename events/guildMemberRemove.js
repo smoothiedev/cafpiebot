@@ -116,7 +116,7 @@ if (message.guild.member(user).roles.has(send.id)) {
     .addField("Username:",`${member.user.username} (${member.user})`,true)
     .addField("Highest Role:",`${role}`,false)
   .setFooter(`User: ${member.user.username}`,`${member.user.avatarURL}`);
-  client.channels.get(modlog.id).send({embed}).catch(console.error);
+guild.channels.get(modlog.id).send({embed}).catch(console.error);
   };
   
 };
