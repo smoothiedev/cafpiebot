@@ -4,8 +4,7 @@ module.exports = client => { // eslint-disable-line no-unused-vars
   console.log(chalk.bgGreen.black('I\'m Online'));
 }
 
-exports.run = (client, message) => {
-const modlog = client.channels.find('name', 'on-duty');
+const modlog = guild.channels.find('name', 'on-duty');
 const embed = new RichEmbed()
 .setColor(0x00ff00)
 .setTimestamp()
@@ -14,5 +13,5 @@ const embed = new RichEmbed()
 .setDescription(`\n`)
 .addField("Hey Pie the bot is",`Online! :ok_hand:`,true)
 .setFooter(`Bot is currently online!`);
-client.channels.get(modlog.id).send({embed}).catch(console.error);
+guild.channels.get(modlog.id).send({embed}).catch(console.error);
 };
