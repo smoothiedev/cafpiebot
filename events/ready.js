@@ -2,7 +2,7 @@ const chalk = require('chalk');
 const Discord = require("discord.js");
 module.exports = client => { // eslint-disable-line no-unused-vars
 console.log(chalk.bgGreen.black('I\'m Online'))
-let guild = member.guild;
+let guild = client.guild;
 const modlog = guild.channels.find('name', 'on-duty');
 const embed = new RichEmbed()
 .setColor(0x00ff00)
