@@ -4,7 +4,7 @@ exports.run = (client, message, args) => {
   const reason = args.slice(1).join(' ');
   const user = message.mentions.users.first();
   const modlog = client.channels.find('name', 'mod-log');
-  const muteRole = client.guilds.get(message.guild.id).roles.find('name', 'Muted');
+  const muteRole = client.guilds.get(message.guild.id).roles.find('name', 'SendMessage');
   if (!modlog) return message.reply('I cannot find a mod-log channel').catch(console.error);
   if (!muteRole) return message.reply('I cannot find a mute role').catch(console.error);
   if (reason.length < 1) return message.reply('You must supply a reason for the mute.').catch(console.error);
@@ -42,11 +42,10 @@ exports.run = (client, message, args) => {
       }})
 
       
-  if (message.guild.member(user).roles.has(muteRole.id)) {
-    message.guild.member(user).removeRole(muteRole).then(() => {
+    message.guild.member(user).addRole(muteRole).then(() => {
       client.channels.get(modlog.id).send({embed}).catch(console.error);
       message.channel.send({embed}).catch(console.error);
-    });
+);
 }};
 
 exports.conf = {
