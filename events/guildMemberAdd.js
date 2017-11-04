@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 module.exports = member => {
 const modlog = member.guild.channels.find('name', 'pie-log');
-  //${member.user.username}
+  //${member.user.username} w
   const embed = new Discord.RichEmbed()
   .setTimestamp()
   .setColor(0xffff00)
