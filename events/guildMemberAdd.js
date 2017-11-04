@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 module.exports = member => {
 const modlog = member.guild.channels.find('name', 'pie-log');
-const muteRole = ("376052336117940235").roles.find("name","SendMessage")
+const muteRole = member.guild.roles.find("name","SendMessage")
   //${member.user.username}
   const embed = new Discord.RichEmbed()
   .setTimestamp()
