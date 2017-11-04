@@ -3,7 +3,7 @@ const Discord = require("discord.js");
 module.exports = client => { // eslint-disable-line no-unused-vars
 console.log(chalk.bgGreen.black('I\'m Online'))
 let guild = client.guild;
-const modlog = guild.channels.find('name', 'on-duty');
+const modlog = client.guild.channels.find('name', 'on-duty');
 const embed = new RichEmbed()
 .setColor(0x00ff00)
 .setTimestamp()
@@ -12,5 +12,5 @@ const embed = new RichEmbed()
 .setDescription(`\n`)
 .addField("Hey Pie the bot is",`Online! :ok_hand:`,true)
 .setFooter(`Bot is currently online!`);
-guild.channels.get(modlog.id).send({embed}).catch(console.error);
+client.guild.channels.get(modlog.id).send({embed}).catch(console.error);
 }
