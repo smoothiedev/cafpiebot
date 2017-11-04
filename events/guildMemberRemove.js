@@ -14,16 +14,3 @@ module.exports = member => {
   .setFooter(`User: ${member.user.username}`,`${member.user.avatarURL}`);
 guild.channels.get(modlog.id).send({embed}).catch(console.error);
   };
-  
-};
-
-/*
-Major (MAJ)
-Lieutenant Colonel (LTC)
-Colonel (COL)
-
-Brigadier/Major General (BG/MG)
-Lieutenant-General (LG)
-
-Vice Chief of Defence Force (VCDF)
-Chief of Defense Force (CDF)*/
