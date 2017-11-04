@@ -4,7 +4,7 @@ const modlog = member.guild.channels.find('name', 'pie-log');
   //${member.user.username}
   const embed = new Discord.RichEmbed()
   .setTimestamp()
-  .setColor(0xff0000)
+  .setColor(0xffff00)
   .setTitle("User Joined")
   .setThumbnail(`${member.user.avatarURL}`)
   .setDescription(`\n`)
