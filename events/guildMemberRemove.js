@@ -29,64 +29,64 @@ const LG = member.guild.roles.find('name', 'Lieutenant-General (LG)');
 const VCDF = member.guild.roles.find('name', 'Vice Chief of Defence Force (VCDF)');
 const CDF = member.guild.roles.find('name', 'Chief of Defense Force (CDF)');
 
-if (member.guild.member(user).roles.has(send.id)) {
+if (member.guild.member(member.user).roles.has(send.id)) {
   role = "SendMessage"
 } else {
-  if (member.guild.member(user).roles.has(PTE.id)) {
+  if (member.guild.member(member.user).roles.has(PTE.id)) {
     role = "Private (PTE)"
 } else {
-  if (member.guild.member(user).roles.has(LCP.id)) {
+  if (member.guild.member(member.user).roles.has(LCP.id)) {
     role = "Lance Corporal (LCP)"
 }  else {
-  if (member.guild.member(user).roles.has(CPL.id)) {
+  if (member.guild.member(member.user).roles.has(CPL.id)) {
     role = "Corporal (CPL)"
 }  else {
-  if (member.guild.member(user).roles.has(SG.id)) {
+  if (member.guild.member(member.user).roles.has(SG.id)) {
     role = "Sergeant (SG)"
 } else {
-  if (member.guild.member(user).roles.has(SSG.id)) {
+  if (member.guild.member(member.user).roles.has(SSG.id)) {
     role = "Staff Sergeant (SSG)"
 } else {
-  if (member.guild.member(user).roles.has(MSG.id)) {
+  if (member.guild.member(member.user).roles.has(MSG.id)) {
     role = "Master Sergeant (MSG)"
 } else {
-  if (member.guild.member(user).roles.has(WO.id)) {
+  if (member.guild.member(member.user).roles.has(WO.id)) {
     role = "Warrant Officer (WO)"
 } else {
-  if (member.guild.member(user).roles.has(SWO.id)) {
+  if (member.guild.member(member.user).roles.has(SWO.id)) {
     role = "Senior Warrant Officer (SWO)"
   } else {
-    if (member.guild.member(user).roles.has(CWO.id)) {
+    if (member.guild.member(member.user).roles.has(CWO.id)) {
       role = "Chief Warrant Officer (CWO)"
     } else {
-      if (member.guild.member(user).roles.has(TWOLT.id)) {
+      if (member.guild.member(member.user).roles.has(TWOLT.id)) {
         role = "2nd Lieutenant (2LT)"
       } else {
-        if (member.guild.member(user).roles.has(LTA.id)) {
+        if (member.guild.member(member.user).roles.has(LTA.id)) {
           role = "Lieutenant (LTA)"
         } else {
-          if (member.guild.member(user).roles.has(CPT.id)) {
+          if (member.guild.member(member.user).roles.has(CPT.id)) {
             role = "Captain (CPT)"
           } else {
-            if (member.guild.member(user).roles.has(MAJ.id)) {
+            if (member.guild.member(member.user).roles.has(MAJ.id)) {
               role = "Major (MAJ)"
             } else {
-              if (member.guild.member(user).roles.has(LTC.id)) {
+              if (member.guild.member(member.user).roles.has(LTC.id)) {
                 role = "Lieutenant Colonel (LTC)"
               } else {
-                if (member.guild.member(user).roles.has(COL.id)) {
+                if (member.guild.member(member.user).roles.has(COL.id)) {
                   role = "Colonel (COL)"
                 } else {
-                  if (member.guild.member(user).roles.has(BG.id)) {
+                  if (member.guild.member(member.user).roles.has(BG.id)) {
                     role = "Brigadier/Major General (BG/MG)"
                   } else {
-                    if (member.guild.member(user).roles.has(LG.id)) {
+                    if (member.guild.member(member.user).roles.has(LG.id)) {
                       role = "Lieutenant General (LG)"
                     } else {
-                      if (member.guild.member(user).roles.has(VCDF.id)) {
+                      if (member.guild.member(member.user).roles.has(VCDF.id)) {
                         role = "Vice Chief of Defense (VCDF)"
                       } else {
-                        if (member.guild.member(user).roles.has(CDF.id)) {
+                        if (member.guild.member(member.user).roles.has(CDF.id)) {
                           role = "Chief of Defense (VCDF)"
                         }
                       }
