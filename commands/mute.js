@@ -44,12 +44,12 @@ fields: [{
   }})
 
   if (!message.guild.member(client.user).hasPermission('MANAGE_ROLES_OR_PERMISSIONS')) return message.reply('I do not have the correct permissions.').catch(console.error);
-
+  if (message.guild.member(user).roles.has(muteRole.id)) {
     message.guild.member(user).removeRole(muteRole).then(() => {
       client.channels.get(modlog.id).send({embed}).catch(console.error);
      message.channel.send({embed}).catch(console.error);
     });
-  }
+  }}
 
 exports.conf = {
   enabled: true,
