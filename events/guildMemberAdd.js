@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 module.exports = member => {
-const modlog = client.channels.find('name', 'pie-log');
+const modlog = guild.channels.find('name', 'pie-log');
   let guild = member.guild;
   //${member.user.username}
   const embed = new Discord.RichEmbed()
@@ -12,5 +12,5 @@ const modlog = client.channels.find('name', 'pie-log');
   .addField("Username:",`${member.user.username} (${member.user})`,true)
   .addField("Role Added:",`SendMessage`,false)
 .setFooter(`User: ${member.user.username}`,`${member.user.avatarURL}`);
-client.channels.get(modlog.id).send({embed}).catch(console.error);
+guild.channels.get(modlog.id).send({embed}).catch(console.error);
 };
