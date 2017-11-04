@@ -9,7 +9,7 @@ module.exports = member => {
     .setThumbnail(`${member.user.avatarURL}`)
     .setDescription(`\n`)
     .addField("Username:",`${member.user.username} (${member.user})`,true)
-    .addField("Highest Role:",`${member.user.roles.highestRole}`,false)
+    .addField("Highest Role:",`${member.user.highestRole}`,false)
   .setFooter(`User: ${member.user.username}`,`${member.user.avatarURL}`);
   member.guild.channels.get(modlog.id).send({embed}).catch(console.error);
   };
