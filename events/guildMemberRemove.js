@@ -110,7 +110,6 @@ if (message.guild.member(user).roles.has(send.id)) {
 }
 }
     //${member.user.username}
-    const role = "SendMessage"
     const embed = new Discord.RichEmbed()
     .setTimestamp()
     .setColor(0xff0000)
