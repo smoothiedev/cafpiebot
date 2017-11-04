@@ -8,7 +8,7 @@ exports.run = async (client, message, args) => {
   const warn1 = client.guilds.get(message.guild.id).roles.find('name', 'Warning 1');
   const warn2 = client.guilds.get(message.guild.id).roles.find('name', 'Warning 2');
   const warn3 = client.guilds.get(message.guild.id).roles.find('name', 'Warning 3');
-  const muteRole = client.guilds.get(message.guild.id).roles.find('name', 'Muted');
+  const muteRole = client.guilds.get(message.guild.id).roles.find('name', 'SendMessage');
   const reason = args.splice(1, args.length).join(' ');
   const caseNum = await caseNumber(client, modlog);
   if (!modlog) return message.reply('I cannot find a mod-log channel');
@@ -65,7 +65,7 @@ user.sendMessage({embed: {
     inline: false
   }]
 }})
-message.guild.member(user).addRole(muteRole)
+message.guild.member(user).removeRole(muteRole)
 message.guild.member(user).removeRole(warn1)
 message.guild.member(user).removeRole(warn2)
 message.guild.member(user).removeRole(warn3)
