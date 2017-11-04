@@ -2,32 +2,32 @@ const Discord = require('discord.js');
 module.exports = member => {
     const modlog = member.guild.channels.find('name', 'pie-log');
     var role = "SendMessage"
-const send = member.guild.get(member.guild.id).roles.find('name', 'SendMessage');
-const PTE = member.guild.get(member.guild.id).roles.find('name', 'Private (PTE)');
-const LCP = member.guild.get(member.guild.id).roles.find('name', 'Lance Corporal (LCP)');
-const CPL = member.guild.get(member.guild.id).roles.find('name', 'Corporal (CPL)');
+const send = member.guild.roles.find('name', 'SendMessage');
+const PTE = member.guild.roles.find('name', 'Private (PTE)');
+const LCP = member.guild.roles.find('name', 'Lance Corporal (LCP)');
+const CPL = member.guild.roles.find('name', 'Corporal (CPL)');
 
-const SG = member.guild.get(member.guild.id).roles.find('name', 'Sergeant (SG)');
-const SSG = member.guild.get(member.guild.id).roles.find('name', 'Staff Sergeant (SSG)');
-const MSG = member.guild.get(member.guild.id).roles.find('name', 'Master Sergeant (MSG)');
+const SG = member.guild.roles.find('name', 'Sergeant (SG)');
+const SSG = member.guild.roles.find('name', 'Staff Sergeant (SSG)');
+const MSG = member.guild.roles.find('name', 'Master Sergeant (MSG)');
 
-const WO = member.guild.get(member.guild.id).roles.find('name', 'Warrant Officer (WO)');
-const SWO = member.guild.get(member.guild.id).roles.find('name', 'Senior Warrant Officer (SWO)');
-const CWO = member.guild.get(member.guild.id).roles.find('name', 'Chief Warrant Officer (CWO)');
+const WO = member.guild.roles.find('name', 'Warrant Officer (WO)');
+const SWO = member.guild.roles.find('name', 'Senior Warrant Officer (SWO)');
+const CWO = member.guild.roles.find('name', 'Chief Warrant Officer (CWO)');
 
-const TWOLT = member.guild.get(member.guild.id).roles.find('name', '2nd Lieutenant (2LT)');
-const LTA = member.guild.get(member.guild.id).roles.find('name', 'Lieutenant (LTA)');
-const CPT = member.guild.get(member.guild.id).roles.find('name', 'Captain (CPT)');
+const TWOLT = member.guild.roles.find('name', '2nd Lieutenant (2LT)');
+const LTA = member.guild.roles.find('name', 'Lieutenant (LTA)');
+const CPT = member.guild.roles.find('name', 'Captain (CPT)');
 
-const MAJ = member.guild.get(member.guild.id).roles.find('name', 'Major (MAJ)');
-const LTC = member.guild.get(member.guild.id).roles.find('name', 'Lieutenant Colonel (LTC)');
-const COL = member.guild.get(member.guild.id).roles.find('name', 'Colonel (COL)');
+const MAJ = member.guild.roles.find('name', 'Major (MAJ)');
+const LTC = member.guild.roles.find('name', 'Lieutenant Colonel (LTC)');
+const COL = member.guild.roles.find('name', 'Colonel (COL)');
 
-const BG = member.guild.get(member.guild.id).roles.find('name', 'Brigadier/Major General (BG/MG)');
-const LG = member.guild.get(member.guild.id).roles.find('name', 'Lieutenant-General (LG)');
+const BG = member.guild.roles.find('name', 'Brigadier/Major General (BG/MG)');
+const LG = member.guild.roles.find('name', 'Lieutenant-General (LG)');
 
-const VCDF = member.guild.get(member.guild.id).roles.find('name', 'Vice Chief of Defence Force (VCDF)');
-const CDF = member.guild.get(member.guild.id).roles.find('name', 'Chief of Defense Force (CDF)');
+const VCDF = member.guild.roles.find('name', 'Vice Chief of Defence Force (VCDF)');
+const CDF = member.guild.roles.find('name', 'Chief of Defense Force (CDF)');
 
 if (member.guild.member(user).roles.has(send.id)) {
   role = "SendMessage"
