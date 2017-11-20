@@ -25,7 +25,7 @@ exports.run = (client, message, args) => {
           inline: false
         },{
           name: "You are free to chat in the discord now, please avoid causing server lockdowns again!",
-          value: `~ Singapore Army`,
+          value: `~ Union Army`,
           inline: false
         }]
           }})
@@ -52,7 +52,7 @@ exports.run = (client, message, args) => {
           inline: false
         },{
           name: `You are not allowed to speak in this channel for ${ms(ms(time), { long:true })}, please wait for the lockdown to be lifted.`,
-          value: `~ Singapore Army`,
+          value: `~ Union Army`,
           inline: false
         }]
           }}).then(() => { //(`Channel locked down for ${ms(ms(time), { long:true })}`)
@@ -74,7 +74,7 @@ exports.run = (client, message, args) => {
               inline: false
             },{
               name: "You are free to chat in the discord now, please avoid causing server lockdowns again!",
-              value: `~ Canadian Army`,
+              value: `~ Union Army`,
               inline: false
             }]
               }})).catch(console.error);
