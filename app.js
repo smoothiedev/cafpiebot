@@ -3,7 +3,7 @@ const client = new Discord.Client();
 const settings = require('./settings.json');
 const chalk = require('chalk');
 const fs = require('fs');
-var anti_spam = require("discord-anti-spam");
+var antispam = require("discord-anti-spam");
 const moment = require('moment');
 require('./util/eventLoader')(client);
 
@@ -33,7 +33,7 @@ antispam(bot, {
   banMessage: "has been banned for spamming, anyone else?", // Ban message, always tags the banned user in front of it.
   maxDuplicatesWarning = 7,// Maximum amount of duplicate messages a user can send in a timespan before getting warned
   maxDuplicatesBan = 20 // Maximum amount of duplicate messages a user can send in a timespan before getting banned
-      log(`Anti-Spam loaded!`);
+
 });
 client.reload = command => {
   return new Promise((resolve, reject) => {
