@@ -8,30 +8,30 @@ exports.run = (client, message, args) => {
   .setTimestamp()
   .setColor(0x00ff00)
   .setTitle("User NSFW access modified")
-  .setThumbnail(`${user.avatarURL}`)
+  .setThumbnail(`${message.author.avatarURL}`)
   .setDescription(`\n`)
-  .addField("Username:",`${user.username} (${user})`,true)
+  .addField("Username:",`${message.author.username} (${message.author})`,true)
   .addField("Allowed access to:",`NSFW`, false)
-  .setFooter(`User: ${user.username}`,`${user.avatarURL}`);
+  .setFooter(`User: ${message.author.username}`,`${message.author.avatarURL}`);
   
 const embed2 = new Discord.RichEmbed()
   .setTimestamp()
   .setColor(0x00ff00)
   .setTitle("User NSFW access modified")
-  .setThumbnail(`${user.avatarURL}`)
+  .setThumbnail(`${message.author.avatarURL}`)
   .setDescription(`\n`)
-  .addField("Username:",`${user.username} (${user})`,true)
+  .addField("Username:",`${message.author.username} (${message.author})`,true)
   .addField("Removed access to:",`NSFW`, false)
-  .setFooter(`User: ${user.username}`,`${user.avatarURL}`);
+  .setFooter(`User: ${message.author.username}`,`${message.author.avatarURL}`);
 
   if (!message.guild.member(client.user).hasPermission('MANAGE_ROLES_OR_PERMISSIONS')) return message.reply('I do not have the correct permissions.').catch(console.error);
 
-if (message.guild.member(user).roles.has(muteRole.id)) {
-message.guild.member(user).removeRole(muteRole);
+if (message.guild.member(message.author).roles.has(muteRole.id)) {
+message.guild.member(message.author).removeRole(muteRole);
       client.channels.get(modlog.id).send({embed2}).catch(console.error);
      message.channel.send({embed2}).catch(console.error);
 } else {
-    message.guild.member(user).addRole(muteRole).then(() => {
+    message.guild.member(message.author).addRole(muteRole).then(() => {
       client.channels.get(modlog.id).send({embed}).catch(console.error);
      message.channel.send({embed}).catch(console.error);
     });
