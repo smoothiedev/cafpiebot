@@ -26,7 +26,7 @@ message.guild.member(message.author).removeRole(muteRole);
     description: (`\n`),
     footer: {
       text: (`User: ${message.author.username}`,`${message.author.avatarURL}`)
-    }
+    },
     fields:[{
       name: "Username:",
       value: `${message.author.username} (${message.author})`,
