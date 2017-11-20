@@ -14,22 +14,46 @@ exports.run = (client, message) => {
   .addField("Allowed access to:",`NSFW`, false)
   .setFooter(`User: ${message.author.username}`,`${message.author.avatarURL}`);
   
-const embed2 = new Discord.RichEmbed()
-  .setTimestamp()
-  .setColor(0x00ff00)
-  .setTitle("User NSFW access modified")
-  .setThumbnail(`${message.author.avatarURL}`)
-  .setDescription(`\n`)
-  .addField("Username:",`${message.author.username} (${message.author})`,true)
-  .addField("Removed access to:",`NSFW`, false)
-  .setFooter(`User: ${message.author.username}`,`${message.author.avatarURL}`);
+
 
   if (!message.guild.member(client.user).hasPermission('MANAGE_ROLES_OR_PERMISSIONS')) return message.reply('I do not have the correct permissions.').catch(console.error);
 
 if (message.guild.member(message.author).roles.has(muteRole.id)) {
 message.guild.member(message.author).removeRole(muteRole);
-      client.channels.get(modlog.id).send({embed2}).catch(console.error);
-     message.channel.send({embed2}).catch(console.error);
+      client.channels.get(modlog.id).sendMessage({embed: {
+    color: 0xff0000,
+    title: "User NSFW access modified",
+    description: (`\n`),
+    footer: {
+      text: `User: ${message.author.username}`,`${message.author.avatarURL}`
+    }
+    fields:[{
+      name: "Username:",
+      value: `${message.author.username} (${message.author})`,
+      inline: false
+    },{
+      name: "Removed access to::",
+      value: `NSFW`,
+      inline: true
+    }]
+      }}).catch(console.error);
+     message.channel.sendMessage({embed: {
+    color: 0xff0000,
+    title: "User NSFW access modified",
+    description: (`\n`),
+    footer: {
+      text: `User: ${message.author.username}`,`${message.author.avatarURL}`
+    }
+    fields:[{
+      name: "Username:",
+      value: `${message.author.username} (${message.author})`,
+      inline: false
+    },{
+      name: "Removed access to::",
+      value: `NSFW`,
+      inline: true
+    }]
+      }}).catch(console.error);
 } else {
     message.guild.member(message.author).addRole(muteRole).then(() => {
       client.channels.get(modlog.id).send({embed}).catch(console.error);
