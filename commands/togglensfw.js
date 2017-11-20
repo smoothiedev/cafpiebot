@@ -24,6 +24,7 @@ message.guild.member(message.author).removeRole(muteRole);
     color: 0xff0000,
     title: "User NSFW access modified",
     description: (`\n`),
+    timestamp: new Date(),
    footer: {
       icon_url: `${message.author.avatarURL}`,
       text: (`User: ${message.author.username}`)
@@ -33,7 +34,7 @@ message.guild.member(message.author).removeRole(muteRole);
       value: `${message.author.username} (${message.author})`,
       inline: false
     },{
-      name: "Removed access to::",
+      name: "Removed access to:",
       value: `NSFW`,
       inline: true
     }]
@@ -41,6 +42,7 @@ message.guild.member(message.author).removeRole(muteRole);
      message.channel.sendMessage({embed: {
     color: 0xff0000,
     title: "User NSFW access modified",
+    timestamp: new Date(),
     description: (`\n`),
     footer: {
       icon_url: `${message.author.avatarURL}`,
@@ -51,7 +53,7 @@ message.guild.member(message.author).removeRole(muteRole);
       value: `${message.author.username} (${message.author})`,
       inline: false
     },{
-      name: "Removed access to::",
+      name: "Removed access to:",
       value: `NSFW`,
       inline: true
     }]
