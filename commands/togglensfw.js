@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const ms = require('ms');
-exports.run = (client, message, args) => {
+exports.run = (client, message) => {
   const modlog = client.channels.find('name', 'pie-log');
   if (!modlog) return message.reply('I cannot find a pie-log channel').catch(console.error);
   const muteRole = client.guilds.get(message.guild.id).roles.find('name', `NSFW`);
