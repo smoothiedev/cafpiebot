@@ -29,7 +29,7 @@ exports.run = (client, message) => {
     value: "Discord Moderator"
   },{
     name: "Discord Admin",
-    value: ""
+    value: "~ The Union Army"
   }]
     }
 	});
