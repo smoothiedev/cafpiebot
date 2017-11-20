@@ -1,35 +1,35 @@
 exports.run = (client, message) => {
       message.channel.send({embed: {
-        title: "List of Singapore Army discord ranks.",
+        title: "List of Union Army discord ranks.",
 		  color: 3447003,
   description: "This can be used with the ;rank command! Please note that ranking people to the ranks not stated here will result in a demotion! You may not rank people higher than your role otherwise you will be punished!",
   fields: [{
-    name: "Brigadier General (BG)",
-    value: "Colonel (COL)"
+    name: "Brigadier General",
+    value: "Colonel"
   },{
-    name: "Lieutenant Colonel (LTC)",
-    value: "Major (MAJ)"
+    name: "Lieutenant Colonel",
+    value: "Major"
   },{
-    name: "Captain (CPT)",
-    value: "Lieutenant (LTA)"
+    name: "Captain",
+    value: "First Lieutenant"
   },{
-    name: "2nd Lieutenant (2LT)",
-    value: "Chief Warrant Officer (CWO)"
+    name: "Second Lieutenant",
+    value: "Sergeant Major of the Army"
   },{
-    name: "Senior Warrant Officer (SWO)",
-    value: "Warrant Officer (WO)"
+    name: "Quartermaster Sergeant",
+    value: "Ordinance Sergeant"
   },{
-    name: "Master Sergeant (MSG)",
-    value: "Staff Sergeant (SSG)"
+    name: "First Sergeant",
+    value: "Sergeant"
   },{
-    name: "Sergeant (SG)",
-    value: "Corporal (CPL)"
+    name: "Corporal",
+    value: "Private"
   },{
-    name: "Lance Corporal (LCP)",
-    value: "Private (PTE)"
+    name: "Volunteer",
+    value: "Discord Moderator"
   },{
-    name: "Recruit (REC)",
-    value: "Discord Admin"
+    name: "Discord Admin",
+    value: ""
   }]
     }
 	});
