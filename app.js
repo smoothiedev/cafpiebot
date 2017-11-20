@@ -3,7 +3,7 @@ const client = new Discord.Client();
 const settings = require('./settings.json');
 const chalk = require('chalk');
 const fs = require('fs');
-var anti_spam = require("discord-anti-spam");
+var antispam = require("discord-anti-spam");
 const moment = require('moment');
 require('./util/eventLoader')(client);
 
