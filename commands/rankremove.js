@@ -6,7 +6,7 @@ exports.run = (client, message, args) => {
   const modlog = client.channels.find('name', 'mod-log');
   if (!modlog) return message.reply('I cannot find a mod-log channel').catch(console.error);
   if (rank.length < 1) return message.reply('You must supply a rank.').catch(console.error);
-  if (message.mentions.users.size < 1) return message.reply('You must mention someone to mute them.').catch(console.error);
+  if (message.mentions.users.size < 1) return message.reply('You must mention someone to demote them.').catch(console.error);
   const muteRole = client.guilds.get(message.guild.id).roles.find('name', `${rank}`);
   const embed = new Discord.RichEmbed()
   .setTimestamp()
@@ -37,7 +37,7 @@ fields: [{
   inline : false
 },{
   name : "If you believe that this was an error, please contact the Administrator involved.",
-  value : `~ Canadian Army`,
+  value : `~ Union Army`,
   inline : false
 }]
   }})
