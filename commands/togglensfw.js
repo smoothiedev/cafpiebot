@@ -27,7 +27,7 @@ message.guild.member(message.author).removeRole(muteRole);
     footer: {
       text: (`User: ${message.author.username}`,`${message.author.avatarURL}`)
     },
-    fields:[{
+    fields: [{
       name: "Username:",
       value: `${message.author.username} (${message.author})`,
       inline: false
@@ -44,7 +44,7 @@ message.guild.member(message.author).removeRole(muteRole);
     footer: {
       text: (`User: ${message.author.username}`,`${message.author.avatarURL}`)
     }
-    fields:[{
+    fields: [{
       name: "Username:",
       value: `${message.author.username} (${message.author})`,
       inline: false
