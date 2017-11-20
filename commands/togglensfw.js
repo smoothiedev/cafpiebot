@@ -26,7 +26,7 @@ const embed2 = new Discord.RichEmbed()
 
   if (!message.guild.member(client.user).hasPermission('MANAGE_ROLES_OR_PERMISSIONS')) return message.reply('I do not have the correct permissions.').catch(console.error);
 
-if message.guild.member(user).hasRole(muteRole).then(() => {
+if (message.guild.member(user).roles.has(muteRole.id)) {
 message.guild.member(user).removeRole(muteRole);
       client.channels.get(modlog.id).send({embed2}).catch(console.error);
      message.channel.send({embed2}).catch(console.error);
