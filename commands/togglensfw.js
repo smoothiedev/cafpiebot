@@ -41,7 +41,7 @@ message.guild.member(user).removeRole(muteRole);
 exports.conf = {
   enabled: true,
   guildOnly: false,
-  aliases: ['togglensfw','nsfw','porn','rule31'],
+  aliases: ['togglensfw','nsfw','porn','rule34'],
   permLevel: 0
 };
 
