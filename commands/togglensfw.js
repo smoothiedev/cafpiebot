@@ -25,7 +25,7 @@ message.guild.member(message.author).removeRole(muteRole);
     title: "User NSFW access modified",
     description: (`\n`),
     footer: {
-      text: `User: ${message.author.username}`,`${message.author.avatarURL}`
+      text: (`User: ${message.author.username}`,`${message.author.avatarURL}`)
     }
     fields:[{
       name: "Username:",
@@ -42,7 +42,7 @@ message.guild.member(message.author).removeRole(muteRole);
     title: "User NSFW access modified",
     description: (`\n`),
     footer: {
-      text: `User: ${message.author.username}`,`${message.author.avatarURL}`
+      text: (`User: ${message.author.username}`,`${message.author.avatarURL}`)
     }
     fields:[{
       name: "Username:",
