@@ -36,7 +36,7 @@ message.guild.member(user).removeRole(muteRole);
      message.channel.send({embed}).catch(console.error);
     });
   }}
-  )
+
 
 exports.conf = {
   enabled: true,
