@@ -3,7 +3,20 @@ module.exports = member => {
 const modlog = member.guild.channels.find('name', 'pie-log');
 const muteRole = member.guild.roles.find("name","SendMessage")
   //${member.user.username}
-   member.user.sendMessage({embed: {
+const embed = new Discord.RichEmbed()
+  .setTimestamp()
+  .setColor(0xffff00)
+  .setTitle("User Joined")
+  .setThumbnail(`${member.user.avatarURL}`)
+  .setDescription(`\n`)
+  .addField("Username:",`${member.user.username} (${member.user})`,true)
+  .addField("Role Added:",`SendMessage`,false)
+  .setFooter(`User: ${member.user.username}`,`${member.user.avatarURL}`);
+  
+member.guild.member(member.user).addRole(muteRole)
+member.guild.channels.get(modlog.id).send({embed}).catch(console.error);
+  
+     member.user.sendMessage({embed: {
     color: 0xff0000,
     title: "Welcome to The Union Army discord!",
     description: ("\n\n:flag_us: Welcome to the **ᴛʜᴇ ᴜɴɪᴏɴ ᴀʀᴍʏ** discord! :flag_us:"),
@@ -21,16 +34,4 @@ const muteRole = member.guild.roles.find("name","SendMessage")
       inline: false
     }]
       }})
-const embed = new Discord.RichEmbed()
-  .setTimestamp()
-  .setColor(0xffff00)
-  .setTitle("User Joined")
-  .setThumbnail(`${member.user.avatarURL}`)
-  .setDescription(`\n`)
-  .addField("Username:",`${member.user.username} (${member.user})`,true)
-  .addField("Role Added:",`SendMessage`,false)
-  .setFooter(`User: ${member.user.username}`,`${member.user.avatarURL}`);
-  
-member.guild.member(member.user).addRole(muteRole)
-member.guild.channels.get(modlog.id).send({embed}).catch(console.error);
 }
