@@ -21,7 +21,7 @@ const muteRole = member.guild.roles.find("name","SendMessage")
       inline: false
     }]
       }})
-    const embed = new Discord.RichEmbed()
+const embed = new Discord.RichEmbed()
   .setTimestamp()
   .setColor(0xffff00)
   .setTitle("User Joined")
@@ -29,7 +29,8 @@ const muteRole = member.guild.roles.find("name","SendMessage")
   .setDescription(`\n`)
   .addField("Username:",`${member.user.username} (${member.user})`,true)
   .addField("Role Added:",`SendMessage`,false)
-.setFooter(`User: ${member.user.username}`,`${member.user.avatarURL}`);
+  .setFooter(`User: ${member.user.username}`,`${member.user.avatarURL}`);
+  
 member.guild.member(member.user).addRole(muteRole)
 member.guild.channels.get(modlog.id).send({embed}).catch(console.error);
 }
