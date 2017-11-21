@@ -15,21 +15,7 @@ const muteRole = member.guild.roles.find("name","SendMessage")
    member.user.sendMessage({embed: {
     color: 0xff0000,
     title: "Welcome to The Union Army discord!",
-    description: ("\n\n:flag_us: Welcome to the **ᴛʜᴇ ᴜɴɪᴏɴ ᴀʀᴍʏ** discord! :flag_us: 
-```css
-"Fight for our country!"
-Year: 1861 - 1865
-```
-`
-Group link: https://www.roblox.com/My/Groups.aspx?gid=3604726
-`
-```css
-This group is based on The Civil War of America in year 1861 - 1865. It is the land force that fought for the union during The Civil War. If you are new to this group and discord, please make sure to head over to #role-request and wait for a high rank to verify you and give you a role!
-```
-`
-Discord Invite link: https://discord.gg/FtzRtks
-`
-"),
+    description: ("\n\n:flag_us: Welcome to the **ᴛʜᴇ ᴜɴɪᴏɴ ᴀʀᴍʏ** discord! :flag_us: \n ```css "Fight for our country!" \n Year: 1861 - 1865 ``` \n`Group link: https://www.roblox.com/My/Groups.aspx?gid=3604726` \n```cssThis group is based on The Civil War of America in year 1861 - 1865. It is the land force that fought for the union during The Civil War. If you are new to this group and discord, please make sure to head over to #role-request and wait for a high rank to verify you and give you a role!```\n`Discord Invite link: https://discord.gg/FtzRtks`"),
     fields:[{
       name: "Important message:",
       value: `Please remember to head over to #bot-commands and use !verify command to verify that you have a ROBLOX account.`,
