@@ -15,7 +15,7 @@ const muteRole = member.guild.roles.find("name","SendMessage")
    member.user.sendMessage({embed: {
     color: 0xff0000,
     title: "Welcome to The Union Army discord!",
-    description: (`\n\n:flag_us: Welcome to the **ᴛʜᴇ ᴜɴɪᴏɴ ᴀʀᴍʏ** discord! :flag_us: 
+    description: ("\n\n:flag_us: Welcome to the **ᴛʜᴇ ᴜɴɪᴏɴ ᴀʀᴍʏ** discord! :flag_us: 
 ```css
 "Fight for our country!"
 Year: 1861 - 1865
@@ -29,7 +29,7 @@ This group is based on The Civil War of America in year 1861 - 1865. It is the l
 `
 Discord Invite link: https://discord.gg/FtzRtks
 `
-`),
+"),
     fields:[{
       name: "Important message:",
       value: `Please remember to head over to #bot-commands and use !verify command to verify that you have a ROBLOX account.`,
