@@ -20,6 +20,10 @@ message.channel.send({embed: {
     value: `${user.username}`,
     inline: true
     },{
+        name: `Nickname`,
+        value: `${guildmember.nickname}`,
+        inline: true
+        },{
         name: `Tag`,
         value: `${user.username}#${user.discriminator}`,
         inline: true
