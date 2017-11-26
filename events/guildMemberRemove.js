@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 module.exports = member => {
     const modlog = member.guild.channels.find('name', 'pie-log');
-    const guild = message.guild.member(member);
+    const guild = member.guild.member(member);
     //${member.user.username}
     const embed = new Discord.RichEmbed()
     .setTimestamp()
