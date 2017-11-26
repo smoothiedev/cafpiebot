@@ -21,7 +21,7 @@ message.channel.send({embed: {
     inline: true
     },{
         name: `Tag`,
-        value: `${user.discriminator}`,
+        value: `${user.username}#${user.discriminator}`,
         inline: true
         },{
             name: `Account created at`,
@@ -37,7 +37,7 @@ message.channel.send({embed: {
                     inline: true
                     },{
                         name: `Permissions`,
-                        value: `${guildmember.permissions}`,
+                        value: `${guildmember.permissions.bitfield}`,
                         inline: true
                         },{
                             name: `Server deaf`,
