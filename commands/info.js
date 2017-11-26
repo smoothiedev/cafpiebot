@@ -4,7 +4,7 @@ const user = message.mentions.users.first();
 const guildmember = message.guild.member(message.mentions.users.first());
 if (message.mentions.users.size < 1) return message.reply('You must mention someone to info them.').catch(console.error);
 message.channel.send({embed: {
-    color: 0xff0000,
+    color: 0x0000ff,
     title: `Info of ${user.username}`,
     description: (``),
   fields: [{
