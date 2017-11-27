@@ -3,8 +3,8 @@ exports.run = (client, message, args) => {
   const modlog = client.channels.find('name', 'pie-log');
   const anno2 = client.channels.find('name', 'inactivity-notice');
 const mainuser = message.guild.member(message.author);
-  const guildmember = message.content.split(" ").join(" ").slice(12 || say)
 const say = args.slice(1).join(' ');
+    const guildmember = message.content.split(" ").join(" ").slice(12) && args.slice(2)
 if (say.length < 1) return message.reply('Please specify on what I have to say.').catch(console.error);
 message.delete()
 
