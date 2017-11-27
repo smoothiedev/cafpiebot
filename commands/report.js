@@ -4,7 +4,7 @@ exports.run = (client, message, args) => {
   const anno2 = client.channels.find('name', 'reports');
   const mainuser = message.guild.member(message.author);
 const say = args.slice(1).join(' ');
-  const guildmember = message.content.split(" ").join(" ").slice(8 || say)
+  const guildmember = message.content.split(" ").join(" ").slice(8) && args.slice(2)
 if (say.length < 1) return message.reply('Please specify on the reason for reporting.').catch(console.error);
 message.delete()
 
