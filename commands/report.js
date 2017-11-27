@@ -22,7 +22,7 @@ client.channels.get(anno2.id).send({embed: {
     })
 };
 
-message.author.sendMessage({embed: {
+message.guild.member(message.author).sendMessage({embed: {
   color: 0xff0000,
   title: "Report Filed",
   description: (`\n**You have filed a report**\n`),
