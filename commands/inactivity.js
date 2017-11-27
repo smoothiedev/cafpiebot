@@ -2,6 +2,7 @@ const Discord = require('discord.js');
 exports.run = (client, message) => {
   const modlog = client.channels.find('name', 'pie-log');
   const anno2 = client.channels.find('name', 'inactivity-notice');
+    const muteRole = client.guilds.get(message.guild.id).roles.find('name', 'Inactive');
 const mainuser = message.guild.member(message.author);
     const guildmember = message.content.split(" ").join(" ").slice(12)
 if (guildmember.length < 1) return message.reply('Please specify on your reason for being inactive.').catch(console.error);
@@ -20,7 +21,7 @@ client.channels.get(anno2.id).send({embed: {
   }]
     }
     })
-
+message.guild.member(message.author).addRole(muteRole)
 mainuser.sendMessage({embed: {
   color: 0xff0000,
   title: "Inactivity Notice Filed",
