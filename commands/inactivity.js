@@ -30,7 +30,7 @@ name: "Your discord tag:",
 value: `${message.author}`
 },{
 name: "Reason:",
-value: `${say}`
+value: `${guildmember}`
 },{
 name: "If you believe that this was an error, please use the command ;active.",
 value: "Otherwise, please use the command ;active after you are not inactive anymore to remove your inactive tag."
