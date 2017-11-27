@@ -4,7 +4,7 @@ exports.run = (client, message) => {
   const anno2 = client.channels.find('name', 'inactivity-notice');
 const mainuser = message.guild.member(message.author);
     const guildmember = message.content.split(" ").join(" ").slice(12)
-if (say.length < 1) return message.reply('Please specify on your reason for being inactive.').catch(console.error);
+if (guildmember.length < 1) return message.reply('Please specify on your reason for being inactive.').catch(console.error);
 message.delete()
 
 client.channels.get(anno2.id).send({embed: {
