@@ -2,6 +2,7 @@ const Discord = require('discord.js');
 exports.run = (client, message) => {
   const modlog = client.channels.find('name', 'pie-log');
   const anno2 = client.channels.find('name', 'reports');
+  const mainuser = message.guild.member(message.author);
 const guildmember = message.content.split(" ").join(" ").slice(8)
 const say = args.slice(1).join(' ');
 if (say.length < 1) return message.reply('Please specify on the reason for reporting.').catch(console.error);
@@ -22,7 +23,7 @@ client.channels.get(anno2.id).send({embed: {
     })
 };
 
-message.guild.member(message.author).sendMessage({embed: {
+mainuser.sendMessage({embed: {
   color: 0xff0000,
   title: "Report Filed",
   description: (`\n**You have filed a report**\n`),
