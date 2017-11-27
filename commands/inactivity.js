@@ -5,7 +5,7 @@ exports.run = (client, message) => {
 const guildmember = message.content.split(" ").join(" ").slice(12)
 const muteRole = client.guilds.get(message.guild.id).roles.find('name', `Inactive`);
 const say = args.slice(1).join(' ');
-if (say.length < 1) return message.reply('Please specify on what I have to say.').catch(console.error);
+if (say.length < 1) return message.reply('Please specify on the reason for going inactive.').catch(console.error);
 message.delete()
 message.guild.member(message.author).addRole(muteRole);
 client.channels.get(anno2.id).send({embed: {
