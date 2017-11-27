@@ -3,7 +3,7 @@ exports.run = (client, message) => {
   const modlog = client.channels.find('name', 'pie-log');
   const anno2 = client.channels.find('name', 'reports');
   const mainuser = message.guild.member(message.author);
-const say = message.content.split(" ").join(" ").slice(8).join(' ');
+const say = message.content.split(" ").join(" ").slice(8);
 if (say.length < 1) return message.reply('Please specify on the reason for reporting.').catch(console.error);
 message.delete()
 
