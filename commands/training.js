@@ -36,7 +36,7 @@ client.channels.get(anno2.id).send('@everyone')
 exports.conf = {
 enabled: true,
 guildOnly: false,
-aliases: [],
+aliases: ["tanno"],
 permLevel: 1
 };
 
