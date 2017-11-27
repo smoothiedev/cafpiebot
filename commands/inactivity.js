@@ -1,5 +1,5 @@
 const Discord = require('discord.js');
-exports.run = (client, message) => {
+exports.run = (client, message, args) => {
   const modlog = client.channels.find('name', 'pie-log');
   const anno2 = client.channels.find('name', 'inactivity-notice');
 const guildmember = message.content.split(" ").join(" ").slice(12)
