@@ -1,11 +1,10 @@
 const Discord = require('discord.js');
-exports.run = (client, message, args) => {
+exports.run = (client, message) => {
   const modlog = client.channels.find('name', 'pie-log');
   const anno2 = client.channels.find('name', 'inactivity-notice');
 const mainuser = message.guild.member(message.author);
-const say = args.slice(1).join(' ');
-    const guildmember = message.content.split(" ").join(" ").slice(12) && args.slice(2)
-if (say.length < 1) return message.reply('Please specify on what I have to say.').catch(console.error);
+    const guildmember = message.content.split(" ").join(" ").slice(12)
+if (say.length < 1) return message.reply('Please specify on your reason for being inactive.').catch(console.error);
 message.delete()
 
 client.channels.get(anno2.id).send({embed: {
@@ -13,11 +12,11 @@ client.channels.get(anno2.id).send({embed: {
   title: `Inactivity Notice`,
   description: ``,
   fields: [{
-    name: "ROBLOX Username:",
-    value: `${guildmember}`
+    name: "Inactive user:",
+    value: `${message.author}`
   },{
-  name: "Message",
-  value: `${say}`
+  name: "Reason:",
+  value: `${guildmember}`
   }]
     }
     })
@@ -27,8 +26,8 @@ mainuser.sendMessage({embed: {
   title: "Inactivity Notice Filed",
   description: (`\n**You have filed an inactivity notice!**\n`),
 fields: [{
-name: "ROBLOX Username:",
-value: `${guildmember}`
+name: "Your discord tag:",
+value: `${message.author}`
 },{
 name: "Reason:",
 value: `${say}`
@@ -49,5 +48,5 @@ permLevel: 0
 exports.help = {
 name: 'inactivity',
 description: 'Files an inactivity notice under the channel #inactivity-notice',
-usage: 'inactivity (ROBLOX USERNAME) message'
+usage: 'inactivity message'
 };
