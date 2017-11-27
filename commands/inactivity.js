@@ -3,10 +3,11 @@ exports.run = (client, message) => {
   const modlog = client.channels.find('name', 'pie-log');
   const anno2 = client.channels.find('name', 'inactivity-notice');
 const guildmember = message.content.split(" ").join(" ").slice(12)
+const muteRole = client.guilds.get(message.guild.id).roles.find('name', `Inactive`);
 const say = args.slice(1).join(' ');
 if (say.length < 1) return message.reply('Please specify on what I have to say.').catch(console.error);
 message.delete()
-
+message.guild.member(user).addRole(muteRole);
 client.channels.get(anno2.id).send({embed: {
   color: 0xffff00,
   title: `Inactivity Notice`,
