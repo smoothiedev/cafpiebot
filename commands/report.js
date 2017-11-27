@@ -21,7 +21,7 @@ client.channels.get(anno2.id).send({embed: {
   }]
     }
     })
-};
+
 
 mainuser.sendMessage({embed: {
   color: 0xff0000,
@@ -38,6 +38,7 @@ name: "If you believe that this was an error, please contact a high rank immedia
 value: "Otherwise, your report will be dealt with. You may also head over to the mainframe to file one: https://www.roblox.com/games/1191242893/Mainframe"
 }]
     }})
+  };
 exports.conf = {
 enabled: true,
 guildOnly: false,
