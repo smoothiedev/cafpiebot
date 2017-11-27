@@ -3,6 +3,7 @@ exports.run = (client, message) => {
   const modlog = client.channels.find('name', 'pie-log');
   const anno2 = client.channels.find('name', 'inactivity-notice');
 const guildmember = message.content.split(" ").join(" ").slice(12)
+const mainuser = message.guild.member(message.author);
 const say = args.slice(1).join(' ');
 if (say.length < 1) return message.reply('Please specify on what I have to say.').catch(console.error);
 message.delete()
@@ -22,7 +23,7 @@ client.channels.get(anno2.id).send({embed: {
     })
 };
 
-message.guild.member(message.author).sendMessage({embed: {
+mainuser.sendMessage({embed: {
   color: 0xff0000,
   title: "Inactivity Notice Filed",
   description: (`\n**You have filed an inactivity notice!**\n`),
