@@ -1,10 +1,9 @@
 const Discord = require('discord.js');
-exports.run = (client, message, args) => {
+exports.run = (client, message) => {
   const modlog = client.channels.find('name', 'pie-log');
   const anno2 = client.channels.find('name', 'reports');
   const mainuser = message.guild.member(message.author);
-const say = args.slice(1).join(' ');
-  const guildmember = message.content.split(" ").join(" ").slice(8) && args.slice(2)
+const say = args.slice(8).join(' ');
 if (say.length < 1) return message.reply('Please specify on the reason for reporting.').catch(console.error);
 message.delete()
 
@@ -13,8 +12,8 @@ client.channels.get(anno2.id).send({embed: {
   title: `Report filed`,
   description: ``,
   fields: [{
-    name: "ROBLOX Username:",
-    value: `${guildmember}`
+    name: "Reporter:",
+    value: `${message.author}`
   },{
   name: "Report reason:",
   value: `${say}`
@@ -28,8 +27,8 @@ mainuser.sendMessage({embed: {
   title: "Report Filed",
   description: (`\n**You have filed a report**\n`),
 fields: [{
-name: "You filed a report against this ROBLOX player:",
-value: `${guildmember}`
+name: "Your discord tag:",
+value: `${message.author}`
 },{
 name: "Reason:",
 value: `${say}`
@@ -49,5 +48,5 @@ permLevel: 0
 exports.help = {
 name: 'report',
 description: 'Files a report to the high ranks.',
-usage: 'report (ROBLOX USERNAME) message'
+usage: 'report message'
 };
