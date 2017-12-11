@@ -1,11 +1,11 @@
 const Discord = require('discord.js');
 exports.run = (client, message, args) => {
   const reason = args.slice(1).join(' ');
-  const user = message.mentions.users.first() || message.guild.members.get(args[0]);
+  const user = message.mentions.users.first();
   const modlog = client.channels.find('name', 'mod-log');
   if (!modlog) return message.reply('I cannot find a mod-log channel');
   if (reason.length < 1) return message.reply('You must supply a reason for the kick.');
-  if (message.mentions.users.size < 1) return message.reply('You did not mention someone or supply a User ID!').catch(console.error);
+  if (message.mentions.users.size < 1) return message.reply('You did not mention someone to kick them!').catch(console.error);
 
   if (!message.guild.member(user).kickable) return message.reply('I cannot kick that member');
 
