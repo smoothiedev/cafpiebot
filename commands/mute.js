@@ -106,7 +106,7 @@ fields: [{
   inline : true
 }]
   }})
-}
+})
 }
 
 exports.conf = {
