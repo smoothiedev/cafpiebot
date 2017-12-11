@@ -22,7 +22,7 @@ exports.run = (client, message, args) => {
   .addField("Duration:",`${ms(ms(time),{long: true})}`, true)
   .setFooter(`User: ${user.username}`,`${user.avatarURL}`);
 
-  user.sendMessage({embed: {
+user.sendMessage({embed: {
 color: 0xff0000,
 title: "User muted warning",
 description: (`\nYou have been muted!\n`),
@@ -55,7 +55,59 @@ fields: [{
       client.channels.get(modlog.id).send({embed}).catch(console.error);
      message.channel.send({embed}).catch(console.error);
     });
-  }}
+  }
+setTimeout(function(){
+message.guild.member(user).addRole(muteRole);
+user.sendMessage({embed: {
+color: 0xff0000,
+title: "User unmuted",
+description: (`\nYou have been muted!\n`),
+fields: [{
+  name : "Username:",
+  value : `${user.username} (${user})`,
+  inline : true
+},{
+  name : "Moderator:",
+  value :`Auto unmute`,
+  inline : true
+},{
+  name : "Mute reason:",
+  value : `${reason}`,
+  inline : false
+},{
+  name : "Duration of mute:",
+  value : `${ms(ms(time),{long: true})}`,
+  inline : true
+},{
+  name : "If you believe that this was an error, please contact the moderator involved.",
+  value : `Please avoid breaking the rules again!`,
+  inline : false
+}]
+  }})
+client.channels.get(modlog.id).send({embed: {
+color: 0xff0000,
+title: "User unmuted",
+description: (`\n\n`),
+fields: [{
+  name : "Username:",
+  value : `${user.username} (${user})`,
+  inline : true
+},{
+  name : "Moderator:",
+  value :`Auto unmute by system`,
+  inline : true
+},{
+  name : "Mute reason:",
+  value : `${reason}`,
+  inline : false
+},{
+  name : "Duration of mute:",
+  value : `${ms(ms(time),{long: true})}`,
+  inline : true
+}]
+  }})
+}
+}
 
 exports.conf = {
   enabled: true,
