@@ -1,7 +1,8 @@
 const Discord = require('discord.js');
 const ms = require('ms');
 exports.run = (client, message, args) => {
-  const reason = args.slice(1).join(' ');
+  const time = args.slice(1).join(' ');
+ const reason = args.slice(2).join(' ');
   const user = message.mentions.users.first();
   const modlog = client.channels.find('name', 'mod-log');
   const muteRole = client.guilds.get(message.guild.id).roles.find('name', 'SendMessage');
@@ -18,6 +19,7 @@ exports.run = (client, message, args) => {
   .addField("Username:",`${user.username} (${user})`,true)
   .addField("Moderator:",`${message.author.username} (${message.author})`, true)
   .addField("Reason:",`${reason}`, false)
+  .addField("Duration:",`${ms(ms(time),{long: true})}`, true)
   .setFooter(`User: ${user.username}`,`${user.avatarURL}`);
 
   user.sendMessage({embed: {
@@ -36,6 +38,10 @@ fields: [{
   name : "Mute reason:",
   value : `${reason}`,
   inline : false
+},{
+  name : "Duration of mute:",
+  value : `${ms(ms(time),{long: true})}`,
+  inline : true
 },{
   name : "If you believe that this was an error, please contact the moderator involved.",
   value : `Please avoid interacting with the server for the time being. However, if you have not been unmuted after the stated time, please contact the moderator immediately.`,
