@@ -1,8 +1,8 @@
 const Discord = require('discord.js');
 const ms = require('ms');
 exports.run = (client, message, args) => {
-  const time = args.slice(1).join(' ');
- const reason = args.slice(2).join(' ');
+   const reason = args.slice(1).join(' ');
+  const time = args.slice(2).join(' ');
   const user = message.mentions.users.first();
   const modlog = client.channels.find('name', 'mod-log');
   const muteRole = client.guilds.get(message.guild.id).roles.find('name', 'SendMessage');
