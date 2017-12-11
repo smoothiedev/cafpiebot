@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 const ms = require('ms');
 exports.run = (client, message, args) => {
-   const reason = args.slice(1).join(' ');
+  const reason = args.slice(1).join(' ');
   const time = args.slice(2).join(' ');
   const user = message.mentions.users.first();
   const modlog = client.channels.find('name', 'mod-log');
@@ -9,6 +9,7 @@ exports.run = (client, message, args) => {
   if (!modlog) return message.reply('I cannot find a mod-log channel').catch(console.error);
   if (!muteRole) return message.reply('I cannot find a mute role').catch(console.error);
   if (reason.length < 1) return message.reply('You must supply a reason for the mute.').catch(console.error);
+  if (!time) return message.reply('You must supply a time for the mute').catch(console.error);
   if (message.mentions.users.size < 1) return message.reply('You did not mention someone to mute them!').catch(console.error);
   const embed = new Discord.RichEmbed()
   .setTimestamp()
@@ -106,7 +107,7 @@ fields: [{
   inline : true
 }]
   }})
-})
+},ms(time));
 }
 
 exports.conf = {
