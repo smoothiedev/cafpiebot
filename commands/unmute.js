@@ -3,8 +3,8 @@ const ms = require('ms');
 exports.run = (client, message, args) => {
   const reason = args.slice(1).join(' ');
   const user = message.mentions.users.first();
-  const modlog = client.channels.find('name', 'mod-log');
-  const muteRole = client.guilds.get(message.guild.id).roles.find('name', 'SendMessage');
+  const modlog = client.channels.find('name', '𝔪𝔬𝔡-𝔩𝔬𝔤');
+  const muteRole = client.guilds.get(message.guild.id).roles.find('name', '𝔖𝔢𝔫𝔡𝔐𝔢𝔰𝔰𝔞𝔤𝔢');
   if (!modlog) return message.reply('I cannot find a mod-log channel').catch(console.error);
   if (!muteRole) return message.reply('I cannot find a mute role').catch(console.error);
   if (reason.length < 1) return message.reply('You must supply a reason to unmute.').catch(console.error);
