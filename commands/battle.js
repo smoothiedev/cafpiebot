@@ -1,10 +1,10 @@
 const Discord = require('discord.js');
 var sleep = require('system-sleep');
 exports.run = (client, message) => {
-    const modlog = client.channels.find('name', 'bot-commands');
+    const modlog = client.channels.find('name', '𝔟𝔬𝔱-𝔠𝔬𝔪𝔪𝔞𝔫𝔡𝔰');
     const user = message.mentions.users.first();
 if (message.mentions.users.size < 1) return message.reply('You must mention someone to battle them.').catch(console.error);
-if (message.channel.name == "bot-commands") {
+if (message.channel.name == "𝔟𝔬𝔱-𝔠𝔬𝔪𝔪𝔞𝔫𝔡𝔰") {
 message.channel.send({embed: {
   color: 0xff0000,
   title: ":fire: Battle Starting in 3!",
