@@ -29,5 +29,6 @@ member.guild.channels.get(modlog.id).send({embed}).catch(console.error);
       value: `Have a great time here! :)`,
       inline: false
     }]
-      }})
-}
+      })
+
+                             }
