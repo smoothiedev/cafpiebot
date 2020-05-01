@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 exports.run = (client, message) => {
   const modlog = client.channels.find('name', 'pie-log');
-  const anno2 = client.channels.find('name', 'announcements');
+  const anno2 = client.channels.find('name', '𝔄𝔫𝔫𝔬𝔲𝔫𝔠𝔢𝔪𝔢𝔫𝔱𝔰');
 let say = message.content.split(" ").join(" ").slice(6)
 if (say.length < 1) return message.reply('Please specify on what I have to say.').catch(console.error);
 message.delete()
