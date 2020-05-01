@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 exports.run = (client, message) => {
-  const modlog = client.channels.find('name', 'pie-log');
+  const modlog = client.channels.find('name', '𝔭𝔦𝔢-𝔩𝔬𝔤');
     const user = message.mentions.users.first();
 if (message.mentions.users.size < 1) return message.reply('You must mention someone to insult them.').catch(console.error);
 message.delete()
