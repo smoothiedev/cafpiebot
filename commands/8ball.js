@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 exports.run = (client, message) => {
-  const modlog = client.channels.find('name', 'pie-log');
+  const modlog = client.channels.find('name', '𝔭𝔦𝔢-𝔩𝔬𝔤');
   let reason = message.content.split(" ").join(" ").slice(6)
 if (reason.length < 1) return message.reply('You must supply a message for 8ball.');
 message.delete()
