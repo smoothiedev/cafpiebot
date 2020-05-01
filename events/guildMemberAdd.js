@@ -18,18 +18,14 @@ member.guild.channels.get(modlog.id).send({embed}).catch(console.error);
   
      member.user.sendMessage({embed: {
     color: 0xff0000,
-    title: "Welcome to The Union Army discord!",
-    description: ("\n\n:flag_us: Welcome to the **ᴛʜᴇ ᴜɴɪᴏɴ ᴀʀᴍʏ** discord! :flag_us:"),
+    title: "Welcome to Opitimal Bureau discord!",
+    description: ("\n\n:flag_sg: Welcome to the **𝔒𝔭𝔦𝔱𝔦𝔪𝔞𝔩 𝔅𝔲𝔯𝔢𝔞𝔲** discord! :flag_sg:"),
     fields:[{
-      name: "Important message:",
-      value: `Please remember to head over to #bot-commands and use !verify command to verify that you have a ROBLOX account.`,
-      inline: false
-    },{
       name: "A safe discord for everyone:",
       value: `Please follow the rules and regulations of discord and the server. Rules can be found under #rules.`,
       inline: true
     },{
-      name: "Welcome to the Union Army discord once again!",
+      name: "Welcome to **𝔒𝔭𝔦𝔱𝔦𝔪𝔞𝔩 𝔅𝔲𝔯𝔢𝔞𝔲** discord once again!",
       value: `Have a great time here! :)`,
       inline: false
     }]
