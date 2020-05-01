@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 exports.run = (client, message) => {
-  const modlog = client.channels.find('name', 'pie-log');
+  const modlog = client.channels.find('name', '𝔭𝔦𝔢-𝔩𝔬𝔤');
 
  const roll = Math.floor(Math.random() * 6) + 1  
 
