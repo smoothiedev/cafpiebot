@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 exports.run = (client, message, args) => {
   const reason = args.slice(1).join(' ');
   const user = message.mentions.users.first();
-  const modlog = client.channels.find('name', 'mod-log');
+  const modlog = client.channels.find('name', '𝔪𝔬𝔡-𝔩𝔬𝔤');
   if (!modlog) return message.reply('I cannot find a mod-log channel');
   if (reason.length < 1) return message.reply('You must supply a reason for the kick.');
   if (message.mentions.users.size < 1) return message.reply('You did not mention someone to kick them!').catch(console.error);
