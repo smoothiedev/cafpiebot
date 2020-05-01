@@ -3,7 +3,7 @@ const Discord = require('discord.js');
 exports.run = (client, message, args) => {
   if (!client.lockit) client.lockit = [];
   const time = args.join(' ');
-  const modlog = client.channels.find('name', 'mod-log');
+  const modlog = client.channels.find('name', '𝔪𝔬𝔡-𝔩𝔬𝔤');
   const validUnlocks = ['release', 'unlock'];
   if (!time) return message.reply('You must set a duration for the lockdown in either hours, minutes or seconds');
 
