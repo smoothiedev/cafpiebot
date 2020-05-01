@@ -1,8 +1,8 @@
 {
 	"ownerid": "251666201019678720",
-	"trainerrolename": "Trainer",
-	"modrolename": "Discord Moderator",
-	"adminrolename": "Discord Admin",
+	"trainerrolename": "Server Admin",
+	"modrolename": "Server Moderator",
+	"adminrolename": "Server Admin",
 	"prefix": ";",
 	"token": "IF7RXELBYRMhRlBnvKNdLOXrjGlXvYNx"
 }
