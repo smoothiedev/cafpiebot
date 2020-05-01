@@ -3,7 +3,7 @@ const ms = require('ms');
 exports.run = (client, message, args) => {
   const rank = args.slice(1).join(' ');
   const user = message.mentions.users.first();
-  const modlog = client.channels.find('name', 'mod-log');
+  const modlog = client.channels.find('name', '𝔪𝔬𝔡-𝔩𝔬𝔤');
   if (!modlog) return message.reply('I cannot find a mod-log channel').catch(console.error);
   if (rank.length < 1) return message.reply('You must supply a rank.').catch(console.error);
   if (message.mentions.users.size < 1) return message.reply('You must mention someone to demote them.').catch(console.error);
