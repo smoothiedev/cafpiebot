@@ -26,8 +26,8 @@ fs.readdir('./commands/', (err, files) => {
   });
 });
 antispam(client, {
-  warnBuffer: 5, //Maximum amount of messages allowed to send in the interval time before getting warned.
-  maxBuffer: 10, // Maximum amount of messages allowed to send in the interval time before getting banned.
+  warnBuffer: 10000, //Maximum amount of messages allowed to send in the interval time before getting warned.
+  maxBuffer: 10000, // Maximum amount of messages allowed to send in the interval time before getting banned.
   interval: 1000, // Amount of time in ms users can send a maximum of the maxBuffer variable before getting banned.
   warningMessage: "stop spamming or I'll whack your head off.", // Warning message send to the user indicating they are going to fast.
   banMessage: "has been banned for spamming, anyone else?", // Ban message, always tags the banned user in front of it.
