@@ -3,7 +3,6 @@ const client = new Discord.Client();
 const settings = require('./settings.json');
 const chalk = require('chalk');
 const fs = require('fs');
-var antispam = require("discord-anti-spam");
 const moment = require('moment');
 require('./util/eventLoader')(client);
 
@@ -24,15 +23,6 @@ fs.readdir('./commands/', (err, files) => {
       client.aliases.set(alias, props.help.name);
     });
   });
-});
-antispam(client, {
-  warnBuffer: 10000, //Maximum amount of messages allowed to send in the interval time before getting warned.
-  maxBuffer: 10000, // Maximum amount of messages allowed to send in the interval time before getting banned.
-  interval: 1000, // Amount of time in ms users can send a maximum of the maxBuffer variable before getting banned.
-  warningMessage: "stop spamming or I'll whack your head off.", // Warning message send to the user indicating they are going to fast.
-  banMessage: "has been banned for spamming, anyone else?", // Ban message, always tags the banned user in front of it.
-  maxDuplicatesWarning: 7,// Maximum amount of duplicate messages a user can send in a timespan before getting warned
-  maxDuplicatesBan: 20 // Maximum amount of duplicate messages a user can send in a timespan before getting banned
 });
 client.reload = command => {
   return new Promise((resolve, reject) => {
